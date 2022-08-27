@@ -1,0 +1,107 @@
+version: "2.0"
+
+rules:
+# cent percent 
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_goodbye
+  - action: utter_35cCbsE6EF4dxgVQnh_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_bot_challenge
+  - action: utter_35cCbsE6EF4dxgVQnh_iamabot
+
+
+# appointment booking sbCc4FE6
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: sbCc4FE6_goodbye
+  - action: utter_sbCc4FE6_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: sbCc4FE6_bot_challenge
+  - action: utter_sbCc4FE6_iamabot
+
+- rule: Exit
+  steps:
+  - intent: sbCc4FE6_close
+  - action: utter_sbCc4FE6_close
+
+- rule: anything else vehicle
+  steps:
+  - intent: sbCc4FE6_vehicle_options
+  - action: utter_sbCc4FE6_vehicle_servicing
+
+- rule: anything else doctor
+  steps:
+  - intent: sbCc4FE6_doctor_options
+  - action: utter_sbCc4FE6_doctor_appointment
+
+- rule: Welcome/Get started
+  steps:
+  - intent: sbCc4FE6_get_started
+  - action: action_welcome_sbCc4FE6
+
+- rule: Greet
+  steps:
+  - intent: sbCc4FE6_greet
+  - action: utter_sbCc4FE6_greet
+
+
+# brundavan qFH0i9NeQv_
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: qFH0i9NeQv_goodbye
+  - action: utter_qFH0i9NeQv_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: qFH0i9NeQv_bot_challenge
+  - action: utter_qFH0i9NeQv_iamabot
+
+- rule: Exit
+  steps:
+  - intent: qFH0i9NeQv_close
+  - action: utter_qFH0i9NeQv_close
+
+
+- rule: anything else
+  steps:
+  - intent: qFH0i9NeQv_doctor_options
+  - action: utter_qFH0i9NeQv_get_started
+
+- rule: Welcome/Get started
+  steps:
+  - intent: qFH0i9NeQv_get_started
+  - action: action_welcome_qFH0i9NeQv
+
+- rule: Greet
+  steps:
+  - intent: qFH0i9NeQv_greet
+  - action: utter_qFH0i9NeQv_get_started
+
+# skipprz JnLRTjwfPT
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: JnLRTjwfPT_goodbye
+  - action: utter_JnLRTjwfPT_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: JnLRTjwfPT_bot_challenge
+  - action: utter_JnLRTjwfPT_iamabot
+
+# Mauvetix Solutions oOwiLmXXsD
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: oOwiLmXXsD_goodbye
+  - action: utter_oOwiLmXXsD_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: oOwiLmXXsD_bot_challenge
+  - action: utter_oOwiLmXXsD_iamabot
+

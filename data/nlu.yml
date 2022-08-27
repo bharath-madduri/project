@@ -1,0 +1,823 @@
+version: "2.0"
+
+nlu:
+# cent percent 35cCbsE6EF4dxgVQnh
+- intent: 35cCbsE6EF4dxgVQnh_greet
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_hey
+    - 35cCbsE6EF4dxgVQnh_hello
+    - 35cCbsE6EF4dxgVQnh_hi
+    - 35cCbsE6EF4dxgVQnh_hello 35cCbsE6EF4dxgVQnh_there
+    - 35cCbsE6EF4dxgVQnh_good 35cCbsE6EF4dxgVQnh_morning
+    - 35cCbsE6EF4dxgVQnh_good 35cCbsE6EF4dxgVQnh_evening
+    - 35cCbsE6EF4dxgVQnh_moin
+    - 35cCbsE6EF4dxgVQnh_hey 35cCbsE6EF4dxgVQnh_there
+    - 35cCbsE6EF4dxgVQnh_let's 35cCbsE6EF4dxgVQnh_go
+    - 35cCbsE6EF4dxgVQnh_hey 35cCbsE6EF4dxgVQnh_dude
+    - 35cCbsE6EF4dxgVQnh_goodmorning
+    - 35cCbsE6EF4dxgVQnh_goodevening
+    - 35cCbsE6EF4dxgVQnh_good 35cCbsE6EF4dxgVQnh_afternoon
+
+- intent: 35cCbsE6EF4dxgVQnh_goodbye
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_cu
+    - 35cCbsE6EF4dxgVQnh_good 35cCbsE6EF4dxgVQnh_by
+    - 35cCbsE6EF4dxgVQnh_cee 35cCbsE6EF4dxgVQnh_you 35cCbsE6EF4dxgVQnh_later
+    - 35cCbsE6EF4dxgVQnh_good 35cCbsE6EF4dxgVQnh_night
+    - 35cCbsE6EF4dxgVQnh_bye
+    - 35cCbsE6EF4dxgVQnh_goodbye
+    - 35cCbsE6EF4dxgVQnh_have 35cCbsE6EF4dxgVQnh_a 35cCbsE6EF4dxgVQnh_nice 35cCbsE6EF4dxgVQnh_day
+    - 35cCbsE6EF4dxgVQnh_see 35cCbsE6EF4dxgVQnh_you 35cCbsE6EF4dxgVQnh_around
+    - 35cCbsE6EF4dxgVQnh_bye 35cCbsE6EF4dxgVQnh_bye
+    - 35cCbsE6EF4dxgVQnh_see 35cCbsE6EF4dxgVQnh_you 35cCbsE6EF4dxgVQnh_later
+    - 35cCbsE6EF4dxgVQnh_talk 35cCbsE6EF4dxgVQnh_to 35cCbsE6EF4dxgVQnh_you 35cCbsE6EF4dxgVQnh_later
+    - 35cCbsE6EF4dxgVQnh_catch 35cCbsE6EF4dxgVQnh_you 35cCbsE6EF4dxgVQnh_later
+    - 35cCbsE6EF4dxgVQnh_ltr
+
+- intent: 35cCbsE6EF4dxgVQnh_affirm
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_yes
+    - 35cCbsE6EF4dxgVQnh_y
+    - 35cCbsE6EF4dxgVQnh_indeed
+    - 35cCbsE6EF4dxgVQnh_of 35cCbsE6EF4dxgVQnh_course
+    - 35cCbsE6EF4dxgVQnh_that 35cCbsE6EF4dxgVQnh_sounds 35cCbsE6EF4dxgVQnh_good
+    - 35cCbsE6EF4dxgVQnh_correct
+
+- intent: 35cCbsE6EF4dxgVQnh_deny
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_no
+    - 35cCbsE6EF4dxgVQnh_n
+    - 35cCbsE6EF4dxgVQnh_never
+    - 35cCbsE6EF4dxgVQnh_I 35cCbsE6EF4dxgVQnh_don't 35cCbsE6EF4dxgVQnh_think 35cCbsE6EF4dxgVQnh_so
+    - 35cCbsE6EF4dxgVQnh_don't 35cCbsE6EF4dxgVQnh_like 35cCbsE6EF4dxgVQnh_that
+    - 35cCbsE6EF4dxgVQnh_no 35cCbsE6EF4dxgVQnh_way
+    - 35cCbsE6EF4dxgVQnh_not 35cCbsE6EF4dxgVQnh_really
+    - 35cCbsE6EF4dxgVQnh_not 35cCbsE6EF4dxgVQnh_right 35cCbsE6EF4dxgVQnh_now
+    - 35cCbsE6EF4dxgVQnh_later 35cCbsE6EF4dxgVQnh_may 35cCbsE6EF4dxgVQnh_be
+    - 35cCbsE6EF4dxgVQnh_later
+    - 35cCbsE6EF4dxgVQnh_maybe
+    - 35cCbsE6EF4dxgVQnh_i 35cCbsE6EF4dxgVQnh_don't 35cCbsE6EF4dxgVQnh_want 35cCbsE6EF4dxgVQnh_to 35cCbsE6EF4dxgVQnh_share
+    - 35cCbsE6EF4dxgVQnh_i 35cCbsE6EF4dxgVQnh_dont 35cCbsE6EF4dxgVQnh_want 35cCbsE6EF4dxgVQnh_to 35cCbsE6EF4dxgVQnh_give
+    - 35cCbsE6EF4dxgVQnh_no 35cCbsE6EF4dxgVQnh_no
+
+- intent: 35cCbsE6EF4dxgVQnh_mood_great
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_perfect
+    - 35cCbsE6EF4dxgVQnh_great
+    - 35cCbsE6EF4dxgVQnh_amazing
+    - 35cCbsE6EF4dxgVQnh_feeling 35cCbsE6EF4dxgVQnh_like 35cCbsE6EF4dxgVQnh_a 35cCbsE6EF4dxgVQnh_king
+    - 35cCbsE6EF4dxgVQnh_wonderful
+    - 35cCbsE6EF4dxgVQnh_I 35cCbsE6EF4dxgVQnh_am 35cCbsE6EF4dxgVQnh_feeling 35cCbsE6EF4dxgVQnh_very 35cCbsE6EF4dxgVQnh_good
+    - 35cCbsE6EF4dxgVQnh_I 35cCbsE6EF4dxgVQnh_am 35cCbsE6EF4dxgVQnh_great
+    - 35cCbsE6EF4dxgVQnh_I 35cCbsE6EF4dxgVQnh_am 35cCbsE6EF4dxgVQnh_amazing
+    - 35cCbsE6EF4dxgVQnh_I 35cCbsE6EF4dxgVQnh_am 35cCbsE6EF4dxgVQnh_going 35cCbsE6EF4dxgVQnh_to 35cCbsE6EF4dxgVQnh_save 35cCbsE6EF4dxgVQnh_the 35cCbsE6EF4dxgVQnh_world
+    - 35cCbsE6EF4dxgVQnh_super 35cCbsE6EF4dxgVQnh_stoked
+    - 35cCbsE6EF4dxgVQnh_extremely 35cCbsE6EF4dxgVQnh_good
+    - 35cCbsE6EF4dxgVQnh_so 35cCbsE6EF4dxgVQnh_so 35cCbsE6EF4dxgVQnh_perfect
+    - 35cCbsE6EF4dxgVQnh_so 35cCbsE6EF4dxgVQnh_good
+    - 35cCbsE6EF4dxgVQnh_so 35cCbsE6EF4dxgVQnh_perfect
+
+- intent: 35cCbsE6EF4dxgVQnh_mood_unhappy
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_my 35cCbsE6EF4dxgVQnh_day 35cCbsE6EF4dxgVQnh_was 35cCbsE6EF4dxgVQnh_horrible
+    - 35cCbsE6EF4dxgVQnh_I 35cCbsE6EF4dxgVQnh_am 35cCbsE6EF4dxgVQnh_sad
+    - 35cCbsE6EF4dxgVQnh_I 35cCbsE6EF4dxgVQnh_don't 35cCbsE6EF4dxgVQnh_feel 35cCbsE6EF4dxgVQnh_very 35cCbsE6EF4dxgVQnh_well
+    - 35cCbsE6EF4dxgVQnh_I 35cCbsE6EF4dxgVQnh_am 35cCbsE6EF4dxgVQnh_disappointed
+    - 35cCbsE6EF4dxgVQnh_super 35cCbsE6EF4dxgVQnh_sad
+    - 35cCbsE6EF4dxgVQnh_I'm 35cCbsE6EF4dxgVQnh_so 35cCbsE6EF4dxgVQnh_sad
+    - 35cCbsE6EF4dxgVQnh_sad
+    - 35cCbsE6EF4dxgVQnh_very 35cCbsE6EF4dxgVQnh_sad
+    - 35cCbsE6EF4dxgVQnh_unhappy
+    - 35cCbsE6EF4dxgVQnh_not 35cCbsE6EF4dxgVQnh_good
+    - 35cCbsE6EF4dxgVQnh_not 35cCbsE6EF4dxgVQnh_very 35cCbsE6EF4dxgVQnh_good
+    - 35cCbsE6EF4dxgVQnh_extremly 35cCbsE6EF4dxgVQnh_sad
+    - 35cCbsE6EF4dxgVQnh_so 35cCbsE6EF4dxgVQnh_saad
+    - 35cCbsE6EF4dxgVQnh_so 35cCbsE6EF4dxgVQnh_sad
+
+- intent: 35cCbsE6EF4dxgVQnh_bot_challenge
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_are 35cCbsE6EF4dxgVQnh_you 35cCbsE6EF4dxgVQnh_a 35cCbsE6EF4dxgVQnh_bot?
+    - 35cCbsE6EF4dxgVQnh_are 35cCbsE6EF4dxgVQnh_you 35cCbsE6EF4dxgVQnh_a 35cCbsE6EF4dxgVQnh_human?
+    - 35cCbsE6EF4dxgVQnh_am 35cCbsE6EF4dxgVQnh_I 35cCbsE6EF4dxgVQnh_talking 35cCbsE6EF4dxgVQnh_to 35cCbsE6EF4dxgVQnh_a 35cCbsE6EF4dxgVQnh_bot?
+    - 35cCbsE6EF4dxgVQnh_am 35cCbsE6EF4dxgVQnh_I 35cCbsE6EF4dxgVQnh_talking 35cCbsE6EF4dxgVQnh_to 35cCbsE6EF4dxgVQnh_a 35cCbsE6EF4dxgVQnh_human?
+
+- intent: 35cCbsE6EF4dxgVQnh_telephone
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_9876543210
+    - 35cCbsE6EF4dxgVQnh_9177328688
+    - 35cCbsE6EF4dxgVQnh_1234567890
+    - 35cCbsE6EF4dxgVQnh_9898989898
+    - 35cCbsE6EF4dxgVQnh_9090909009
+    - 35cCbsE6EF4dxgVQnh_6789054321
+
+- intent: 35cCbsE6EF4dxgVQnh_email
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_bharat@mauvetix.com
+    - 35cCbsE6EF4dxgVQnh_random@domain.com
+    - 35cCbsE6EF4dxgVQnh_testing@mail.com
+    - 35cCbsE6EF4dxgVQnh_as.mad@yahoo.co.in
+    - 35cCbsE6EF4dxgVQnh_domain@mainc.om
+
+- intent: 35cCbsE6EF4dxgVQnh_name
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_bharath
+    - 35cCbsE6EF4dxgVQnh_lokesh
+    - 35cCbsE6EF4dxgVQnh_vinay
+    - 35cCbsE6EF4dxgVQnh_ashish
+    - 35cCbsE6EF4dxgVQnh_krishna
+    - 35cCbsE6EF4dxgVQnh_vk
+    - 35cCbsE6EF4dxgVQnh_pk
+
+- intent: 35cCbsE6EF4dxgVQnh_ott_solutions
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_ott 35cCbsE6EF4dxgVQnh_solutions
+    - 35cCbsE6EF4dxgVQnh_Custom 35cCbsE6EF4dxgVQnh_ott 35cCbsE6EF4dxgVQnh_solutions
+
+- intent: 35cCbsE6EF4dxgVQnh_iptv
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_iptv
+    - 35cCbsE6EF4dxgVQnh_solutions 35cCbsE6EF4dxgVQnh_for 35cCbsE6EF4dxgVQnh_iptv
+
+- intent: 35cCbsE6EF4dxgVQnh_subscription
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_subscription 35cCbsE6EF4dxgVQnh_management 35cCbsE6EF4dxgVQnh_system
+    - 35cCbsE6EF4dxgVQnh_subscription
+    - 35cCbsE6EF4dxgVQnh_manage 35cCbsE6EF4dxgVQnh_subscribers
+    - 35cCbsE6EF4dxgVQnh_engage 35cCbsE6EF4dxgVQnh_subscribed 35cCbsE6EF4dxgVQnh_customers
+    - 35cCbsE6EF4dxgVQnh_engage 35cCbsE6EF4dxgVQnh_subscribed 35cCbsE6EF4dxgVQnh_users
+
+- intent: 35cCbsE6EF4dxgVQnh_content
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_content
+    - 35cCbsE6EF4dxgVQnh_DRM 35cCbsE6EF4dxgVQnh_protection
+    - 35cCbsE6EF4dxgVQnh_CDN
+    - 35cCbsE6EF4dxgVQnh_ABR
+    - 35cCbsE6EF4dxgVQnh_content 35cCbsE6EF4dxgVQnh_protection
+
+- intent: 35cCbsE6EF4dxgVQnh_monetization
+  examples: |
+    - 35cCbsE6EF4dxgVQnh_monetization
+    - 35cCbsE6EF4dxgVQnh_tracking
+    - 35cCbsE6EF4dxgVQnh_ad 35cCbsE6EF4dxgVQnh_monetization
+
+# appointment booking sbCc4FE6
+
+- intent: sbCc4FE6_greet
+  examples: |
+    - sbCc4FE6_hey
+    - sbCc4FE6_hello
+    - sbCc4FE6_hi
+    - sbCc4FE6_hello sbCc4FE6_there
+    - sbCc4FE6_good sbCc4FE6_morning
+    - sbCc4FE6_good sbCc4FE6_evening
+    - sbCc4FE6_moin
+    - sbCc4FE6_hey sbCc4FE6_there
+    - sbCc4FE6_let's sbCc4FE6_go
+    - sbCc4FE6_hey sbCc4FE6_dude
+    - sbCc4FE6_goodmorning
+    - sbCc4FE6_goodevening
+    - sbCc4FE6_good sbCc4FE6_afternoon
+
+- intent: sbCc4FE6_goodbye
+  examples: |
+    - sbCc4FE6_cu
+    - sbCc4FE6_good sbCc4FE6_by
+    - sbCc4FE6_cee sbCc4FE6_you sbCc4FE6_later
+    - sbCc4FE6_good sbCc4FE6_night
+    - sbCc4FE6_bye
+    - sbCc4FE6_goodbye
+    - sbCc4FE6_have sbCc4FE6_a sbCc4FE6_nice sbCc4FE6_day
+    - sbCc4FE6_see sbCc4FE6_you sbCc4FE6_around
+    - sbCc4FE6_bye sbCc4FE6_bye
+    - sbCc4FE6_see sbCc4FE6_you sbCc4FE6_later
+
+- intent: sbCc4FE6_affirm
+  examples: |
+    - sbCc4FE6_yes
+    - sbCc4FE6_y
+    - sbCc4FE6_indeed
+    - sbCc4FE6_of sbCc4FE6_course
+    - sbCc4FE6_that sbCc4FE6_sounds sbCc4FE6_good
+    - sbCc4FE6_correct
+    - sbCc4FE6_good
+    - sbCc4FE6_tanks
+    - sbCc4FE6_tanks sbCc4FE6_a sbCc4FE6_lot
+    - sbCc4FE6_thanks 
+    - sbCc4FE6_thanks sbCc4FE6_a sbCc4FE6_lot
+    - sbCc4FE6_thanks sbCc4FE6_a sbCc4FE6_ton
+    - sbCc4FE6_thank sbCc4FE6_you
+    - sbCc4FE6_thank sbCc4FE6_you sbCc4FE6_so sbCc4FE6_much
+    - sbCc4FE6_that's sbCc4FE6_right
+    - sbCc4FE6_tysm
+    - sbCc4FE6_yeah
+    - sbCc4FE6_yep
+
+- intent: sbCc4FE6_deny
+  examples: |
+    - sbCc4FE6_no
+    - sbCc4FE6_n
+    - sbCc4FE6_never
+    - sbCc4FE6_I sbCc4FE6_don't sbCc4FE6_think sbCc4FE6_so
+    - sbCc4FE6_don't sbCc4FE6_like sbCc4FE6_that
+    - sbCc4FE6_no sbCc4FE6_way
+    - sbCc4FE6_not sbCc4FE6_really
+
+- intent: sbCc4FE6_mood_great
+  examples: |
+    - sbCc4FE6_perfect
+    - sbCc4FE6_great
+    - sbCc4FE6_amazing
+    - sbCc4FE6_feeling sbCc4FE6_like sbCc4FE6_a sbCc4FE6_king
+    - sbCc4FE6_wonderful
+    - sbCc4FE6_I sbCc4FE6_am sbCc4FE6_feeling sbCc4FE6_very sbCc4FE6_good
+    - sbCc4FE6_I sbCc4FE6_am sbCc4FE6_great
+    - sbCc4FE6_I sbCc4FE6_am sbCc4FE6_amazing
+    - sbCc4FE6_I sbCc4FE6_am sbCc4FE6_going sbCc4FE6_to sbCc4FE6_save sbCc4FE6_the sbCc4FE6_world
+    - sbCc4FE6_super sbCc4FE6_stoked
+    - sbCc4FE6_extremely sbCc4FE6_good
+    - sbCc4FE6_so sbCc4FE6_so sbCc4FE6_perfect
+    - sbCc4FE6_so sbCc4FE6_good
+    - sbCc4FE6_so sbCc4FE6_perfect
+
+- intent: sbCc4FE6_mood_unhappy
+  examples: |
+    - sbCc4FE6_my sbCc4FE6_day sbCc4FE6_was sbCc4FE6_horrible
+    - sbCc4FE6_I sbCc4FE6_am sbCc4FE6_sad
+    - sbCc4FE6_I sbCc4FE6_don't sbCc4FE6_feel sbCc4FE6_very sbCc4FE6_well
+    - sbCc4FE6_I sbCc4FE6_am sbCc4FE6_disappointed
+    - sbCc4FE6_super sbCc4FE6_sad
+    - sbCc4FE6_I'm sbCc4FE6_so sbCc4FE6_sad
+    - sbCc4FE6_sad
+    - sbCc4FE6_very sbCc4FE6_sad
+    - sbCc4FE6_unhappy
+    - sbCc4FE6_not sbCc4FE6_good
+    - sbCc4FE6_not sbCc4FE6_very sbCc4FE6_good
+    - sbCc4FE6_extremly sbCc4FE6_sad
+    - sbCc4FE6_so sbCc4FE6_saad
+    - sbCc4FE6_so sbCc4FE6_sad
+
+- intent: sbCc4FE6_bot_challenge
+  examples: |
+    - sbCc4FE6_are sbCc4FE6_you sbCc4FE6_a sbCc4FE6_bot?
+    - sbCc4FE6_are sbCc4FE6_you sbCc4FE6_a sbCc4FE6_human?
+    - sbCc4FE6_am sbCc4FE6_I sbCc4FE6_talking sbCc4FE6_to sbCc4FE6_a sbCc4FE6_bot?
+    - sbCc4FE6_am sbCc4FE6_I sbCc4FE6_talking sbCc4FE6_to sbCc4FE6_a sbCc4FE6_human?
+
+- intent: sbCc4FE6_vehicle_servicing
+  examples: |
+    - sbCc4FE6_vehicle sbCc4FE6_servicing
+    - sbCc4FE6_I sbCc4FE6_want sbCc4FE6_to sbCc4FE6_get sbCc4FE6_my sbCc4FE6_vehicle sbCc4FE6_servicing sbCc4FE6_done
+    - sbCc4FE6_motor sbCc4FE6_vehicle sbCc4FE6_service
+    - sbCc4FE6_I sbCc4FE6_want sbCc4FE6_to sbCc4FE6_get sbCc4FE6_my sbCc4FE6_vehicle sbCc4FE6_checked
+
+- intent: sbCc4FE6_vehicle_model
+  examples: |
+    - sbCc4FE6_KTM
+    - sbCc4FE6_Royal sbCc4FE6_Enfield
+    - sbCc4FE6_Pulsar
+    - sbCc4FE6_Hero sbCc4FE6_Honda 
+    - sbCc4FE6_Suzuki
+    - sbCc4FE6_Yamaha
+
+- intent: sbCc4FE6_doctor_appointment
+  examples: |
+    - sbCc4FE6_doctor sbCc4FE6_appointment
+    - sbCc4FE6_need sbCc4FE6_doctor sbCc4FE6_consultation
+    - sbCc4FE6_doctor sbCc4FE6_availability
+    - sbCc4FE6_want sbCc4FE6_doctor's sbCc4FE6_appointment
+
+- intent: sbCc4FE6_telephone
+  examples: |
+    - sbCc4FE6_9876543210
+    - sbCc4FE6_9177328688
+    - sbCc4FE6_1234567890
+    - sbCc4FE6_9898989898
+    - sbCc4FE6_9090909009
+    - sbCc4FE6_6789054321
+
+- intent: sbCc4FE6_email
+  examples: |
+    - sbCc4FE6_bharat@mauvetix.com
+    - sbCc4FE6_random@domain.com
+    - sbCc4FE6_testing@mail.com
+    - sbCc4FE6_as.mad@yahoo.co.in
+    - sbCc4FE6_domain@mainc.om
+
+- intent: sbCc4FE6_speciality
+  examples: |
+    - sbCc4FE6_Cardiology
+    - sbCc4FE6_E&T
+    - sbCc4FE6_Orthopedic
+    - sbCc4FE6_Dermatology
+
+- intent: sbCc4FE6_name
+  examples: |
+    - sbCc4FE6_bharath
+    - sbCc4FE6_lokesh
+    - sbCc4FE6_vinay
+    - sbCc4FE6_ashish
+    - sbCc4FE6_krishna
+    - sbCc4FE6_vk
+    - sbCc4FE6_pk
+    - sbCc4FE6_Dr.Sreevalli
+    - sbCc4FE6_Dr.Sanjeeva sbCc4FE6_Alijarla
+
+- intent: sbCc4FE6_service_type
+  examples: |
+    - sbCc4FE6_Free sbCc4FE6_service
+    - sbCc4FE6_free sbCc4FE6_service
+    - sbCc4FE6_Paid sbCc4FE6_service
+    - sbCc4FE6_paid sbCc4FE6_service
+    - sbCc4FE6_Others
+    - sbCc4FE6_others
+
+- intent: sbCc4FE6_date
+  examples: |
+    - sbCc4FE6_Feb sbCc4FE6_07, sbCc4FE6_2022 
+    - sbCc4FE6_Feb sbCc4FE6_08, sbCc4FE6_2023 
+    - sbCc4FE6_Mar sbCc4FE6_06, sbCc4FE6_2021 
+    - sbCc4FE6_Feb sbCc4FE6_09, sbCc4FE6_2020 
+    - sbCc4FE6_Apr sbCc4FE6_06, sbCc4FE6_2022 
+    - sbCc4FE6_Feb sbCc4FE6_06, sbCc4FE6_2024 
+    - sbCc4FE6_Feb sbCc4FE6_10, sbCc4FE6_2025 
+    - sbCc4FE6_May sbCc4FE6_26, sbCc4FE6_2022 
+    - sbCc4FE6_Feb sbCc4FE6_28, sbCc4FE6_2022 
+    - sbCc4FE6_2022-01-11T12:21:44+05:30
+    - sbCc4FE6_2023-12-11T00:00:00+05:30
+    - sbCc4FE6_2022-01-12 16:38:51+05:30
+
+- intent: sbCc4FE6_time
+  examples: |
+    - sbCc4FE6_9.00 sbCc4FE6_AM
+    - sbCc4FE6_10.00 sbCc4FE6_AM
+    - sbCc4FE6_11.00 sbCc4FE6_AM
+    - sbCc4FE6_12.00 sbCc4FE6_PM
+    - sbCc4FE6_2.00 sbCc4FE6_PM
+    - sbCc4FE6_3.00 sbCc4FE6_PM
+    - sbCc4FE6_4.00 sbCc4FE6_PM
+    - sbCc4FE6_5.00 sbCc4FE6_PM
+    - sbCc4FE6_15:4515:59
+    - sbCc4FE6_10:0011:59
+    - sbCc4FE6_(12, ':', 0, 12, ':', 30)
+    - sbCc4FE6_(12, ':', 30, 13, ':', 0)
+    - sbCc4FE6_(14, ':', 15, 14, ':', 45)
+    - sbCc4FE6_(14, ':', 45, 15, ':', 0)
+    - sbCc4FE6_(15, ':', 15, 15, ':', 45)
+    - sbCc4FE6_(15, ':', 45, 15, ':', 59)
+
+# brundavan qFH0i9NeQv_
+- intent: qFH0i9NeQv_greet
+  examples: |
+    - qFH0i9NeQv_hey
+    - qFH0i9NeQv_hello
+    - qFH0i9NeQv_hi
+    - qFH0i9NeQv_hello qFH0i9NeQv_there
+    - qFH0i9NeQv_good qFH0i9NeQv_morning
+    - qFH0i9NeQv_good qFH0i9NeQv_evening
+    - qFH0i9NeQv_moin
+    - qFH0i9NeQv_hey qFH0i9NeQv_there
+    - qFH0i9NeQv_let's qFH0i9NeQv_go
+    - qFH0i9NeQv_hey qFH0i9NeQv_dude
+    - qFH0i9NeQv_goodmorning
+    - qFH0i9NeQv_goodevening
+    - qFH0i9NeQv_good qFH0i9NeQv_afternoon
+
+- intent: qFH0i9NeQv_goodbye
+  examples: |
+    - qFH0i9NeQv_cu
+    - qFH0i9NeQv_good qFH0i9NeQv_by
+    - qFH0i9NeQv_cee qFH0i9NeQv_you qFH0i9NeQv_later
+    - qFH0i9NeQv_good qFH0i9NeQv_night
+    - qFH0i9NeQv_bye
+    - qFH0i9NeQv_goodbye
+    - qFH0i9NeQv_have qFH0i9NeQv_a qFH0i9NeQv_nice qFH0i9NeQv_day
+    - qFH0i9NeQv_see qFH0i9NeQv_you qFH0i9NeQv_around
+    - qFH0i9NeQv_bye qFH0i9NeQv_bye
+    - qFH0i9NeQv_see qFH0i9NeQv_you qFH0i9NeQv_later
+
+- intent: qFH0i9NeQv_affirm
+  examples: |
+    - qFH0i9NeQv_yes
+    - qFH0i9NeQv_y
+    - qFH0i9NeQv_indeed
+    - qFH0i9NeQv_of qFH0i9NeQv_course
+    - qFH0i9NeQv_that qFH0i9NeQv_sounds qFH0i9NeQv_good
+    - qFH0i9NeQv_correct
+    - qFH0i9NeQv_good
+    - qFH0i9NeQv_tanks
+    - qFH0i9NeQv_tanks qFH0i9NeQv_a qFH0i9NeQv_lot
+    - qFH0i9NeQv_thanks 
+    - qFH0i9NeQv_thanks qFH0i9NeQv_a qFH0i9NeQv_lot
+    - qFH0i9NeQv_thanks qFH0i9NeQv_a qFH0i9NeQv_ton
+    - qFH0i9NeQv_thank qFH0i9NeQv_you
+    - qFH0i9NeQv_thank qFH0i9NeQv_you qFH0i9NeQv_so qFH0i9NeQv_much
+    - qFH0i9NeQv_that's qFH0i9NeQv_right
+    - qFH0i9NeQv_tysm
+    - qFH0i9NeQv_yeah
+    - qFH0i9NeQv_yep
+
+- intent: qFH0i9NeQv_deny
+  examples: |
+    - qFH0i9NeQv_no
+    - qFH0i9NeQv_n
+    - qFH0i9NeQv_never
+    - qFH0i9NeQv_I qFH0i9NeQv_don't qFH0i9NeQv_think qFH0i9NeQv_so
+    - qFH0i9NeQv_don't qFH0i9NeQv_like qFH0i9NeQv_that
+    - qFH0i9NeQv_no qFH0i9NeQv_way
+    - qFH0i9NeQv_not qFH0i9NeQv_really
+
+- intent: qFH0i9NeQv_mood_great
+  examples: |
+    - qFH0i9NeQv_perfect
+    - qFH0i9NeQv_great
+    - qFH0i9NeQv_amazing
+    - qFH0i9NeQv_feeling qFH0i9NeQv_like qFH0i9NeQv_a qFH0i9NeQv_king
+    - qFH0i9NeQv_wonderful
+    - qFH0i9NeQv_I qFH0i9NeQv_am qFH0i9NeQv_feeling qFH0i9NeQv_very qFH0i9NeQv_good
+    - qFH0i9NeQv_I qFH0i9NeQv_am qFH0i9NeQv_great
+    - qFH0i9NeQv_I qFH0i9NeQv_am qFH0i9NeQv_amazing
+    - qFH0i9NeQv_I qFH0i9NeQv_am qFH0i9NeQv_going qFH0i9NeQv_to qFH0i9NeQv_save qFH0i9NeQv_the qFH0i9NeQv_world
+    - qFH0i9NeQv_super qFH0i9NeQv_stoked
+    - qFH0i9NeQv_extremely qFH0i9NeQv_good
+    - qFH0i9NeQv_so qFH0i9NeQv_so qFH0i9NeQv_perfect
+    - qFH0i9NeQv_so qFH0i9NeQv_good
+    - qFH0i9NeQv_so qFH0i9NeQv_perfect
+
+- intent: qFH0i9NeQv_mood_unhappy
+  examples: |
+    - qFH0i9NeQv_my qFH0i9NeQv_day qFH0i9NeQv_was qFH0i9NeQv_horrible
+    - qFH0i9NeQv_I qFH0i9NeQv_am qFH0i9NeQv_sad
+    - qFH0i9NeQv_I qFH0i9NeQv_don't qFH0i9NeQv_feel qFH0i9NeQv_very qFH0i9NeQv_well
+    - qFH0i9NeQv_I qFH0i9NeQv_am qFH0i9NeQv_disappointed
+    - qFH0i9NeQv_super qFH0i9NeQv_sad
+    - qFH0i9NeQv_I'm qFH0i9NeQv_so qFH0i9NeQv_sad
+    - qFH0i9NeQv_sad
+    - qFH0i9NeQv_very qFH0i9NeQv_sad
+    - qFH0i9NeQv_unhappy
+    - qFH0i9NeQv_not qFH0i9NeQv_good
+    - qFH0i9NeQv_not qFH0i9NeQv_very qFH0i9NeQv_good
+    - qFH0i9NeQv_extremly qFH0i9NeQv_sad
+    - qFH0i9NeQv_so qFH0i9NeQv_saad
+    - qFH0i9NeQv_so qFH0i9NeQv_sad
+
+- intent: qFH0i9NeQv_bot_challenge
+  examples: |
+    - qFH0i9NeQv_are qFH0i9NeQv_you qFH0i9NeQv_a qFH0i9NeQv_bot?
+    - qFH0i9NeQv_are qFH0i9NeQv_you qFH0i9NeQv_a qFH0i9NeQv_human?
+    - qFH0i9NeQv_am qFH0i9NeQv_I qFH0i9NeQv_talking qFH0i9NeQv_to qFH0i9NeQv_a qFH0i9NeQv_bot?
+    - qFH0i9NeQv_am qFH0i9NeQv_I qFH0i9NeQv_talking qFH0i9NeQv_to qFH0i9NeQv_a qFH0i9NeQv_human?
+
+- intent: qFH0i9NeQv_doctor_appointment
+  examples: |
+    - qFH0i9NeQv_doctor qFH0i9NeQv_appointment
+    - qFH0i9NeQv_need qFH0i9NeQv_doctor qFH0i9NeQv_consultation
+    - qFH0i9NeQv_doctor qFH0i9NeQv_availability
+    - qFH0i9NeQv_want qFH0i9NeQv_doctor's qFH0i9NeQv_appointment
+
+- intent: qFH0i9NeQv_telephone
+  examples: |
+    - qFH0i9NeQv_9876543210
+    - qFH0i9NeQv_9177328688
+    - qFH0i9NeQv_1234567890
+    - qFH0i9NeQv_9898989898
+    - qFH0i9NeQv_9090909009
+    - qFH0i9NeQv_6789054321
+
+- intent: qFH0i9NeQv_email
+  examples: |
+    - qFH0i9NeQv_bharat@mauvetix.com
+    - qFH0i9NeQv_random@domain.com
+    - qFH0i9NeQv_testing@mail.com
+    - qFH0i9NeQv_as.mad@yahoo.co.in
+    - qFH0i9NeQv_domain@mainc.om
+
+- intent: qFH0i9NeQv_speciality
+  examples: |
+    - qFH0i9NeQv_Gynecology 
+    - qFH0i9NeQv_Pediatric 
+
+- intent: qFH0i9NeQv_name
+  examples: |
+    - qFH0i9NeQv_bharath
+    - qFH0i9NeQv_lokesh
+    - qFH0i9NeQv_vinay
+    - qFH0i9NeQv_ashish
+    - qFH0i9NeQv_krishna
+    - qFH0i9NeQv_vk
+    - qFH0i9NeQv_pk
+    - qFH0i9NeQv_Dr. qFH0i9NeQv_Karthik
+    - qFH0i9NeQv_Dr. qFH0i9NeQv_Gitanjali
+
+
+- intent: qFH0i9NeQv_date
+  examples: |
+    - qFH0i9NeQv_Feb qFH0i9NeQv_07, qFH0i9NeQv_2022 
+    - qFH0i9NeQv_Feb qFH0i9NeQv_08, qFH0i9NeQv_2023 
+    - qFH0i9NeQv_Mar qFH0i9NeQv_06, qFH0i9NeQv_2021 
+    - qFH0i9NeQv_Feb qFH0i9NeQv_09, qFH0i9NeQv_2020 
+    - qFH0i9NeQv_Apr qFH0i9NeQv_06, qFH0i9NeQv_2022 
+    - qFH0i9NeQv_Feb qFH0i9NeQv_06, qFH0i9NeQv_2024 
+    - qFH0i9NeQv_Feb qFH0i9NeQv_10, qFH0i9NeQv_2025 
+    - qFH0i9NeQv_May qFH0i9NeQv_26, qFH0i9NeQv_2022 
+    - qFH0i9NeQv_Feb qFH0i9NeQv_28, qFH0i9NeQv_2022 
+    - qFH0i9NeQv_2022-01-11T12:21:44+05:30
+    - qFH0i9NeQv_2023-12-11T00:00:00+05:30
+    - qFH0i9NeQv_2022-01-12 16:38:51+05:30
+
+- intent: qFH0i9NeQv_time
+  examples: |
+    - qFH0i9NeQv_9.00 qFH0i9NeQv_AM
+    - qFH0i9NeQv_10.00 qFH0i9NeQv_AM
+    - qFH0i9NeQv_11.00 qFH0i9NeQv_AM
+    - qFH0i9NeQv_12.00 qFH0i9NeQv_PM
+    - qFH0i9NeQv_2.00 qFH0i9NeQv_PM
+    - qFH0i9NeQv_3.00 qFH0i9NeQv_PM
+    - qFH0i9NeQv_4.00 qFH0i9NeQv_PM
+    - qFH0i9NeQv_5.00 qFH0i9NeQv_PM
+    - qFH0i9NeQv_15:4515:59
+    - qFH0i9NeQv_10:0011:59
+    - qFH0i9NeQv_(12, ':', 0, 12, ':', 30)
+    - qFH0i9NeQv_(12, ':', 30, 13, ':', 0)
+    - qFH0i9NeQv_(14, ':', 15, 14, ':', 45)
+    - qFH0i9NeQv_(14, ':', 45, 15, ':', 0)
+    - qFH0i9NeQv_(15, ':', 15, 15, ':', 45)
+    - qFH0i9NeQv_(15, ':', 45, 15, ':', 59)
+  
+# skipprz JnLRTjwfPT
+- intent: JnLRTjwfPT_greet
+  examples: |
+    - JnLRTjwfPT_hey
+    - JnLRTjwfPT_hello
+    - JnLRTjwfPT_hi
+    - JnLRTjwfPT_hello JnLRTjwfPT_there
+    - JnLRTjwfPT_good JnLRTjwfPT_morning
+    - JnLRTjwfPT_good JnLRTjwfPT_evening
+    - JnLRTjwfPT_moin
+    - JnLRTjwfPT_hey JnLRTjwfPT_there
+    - JnLRTjwfPT_let's JnLRTjwfPT_go
+    - JnLRTjwfPT_hey JnLRTjwfPT_dude
+    - JnLRTjwfPT_goodmorning
+    - JnLRTjwfPT_goodevening
+    - JnLRTjwfPT_good JnLRTjwfPT_afternoon
+
+- intent: JnLRTjwfPT_goodbye
+  examples: |
+    - JnLRTjwfPT_cu
+    - JnLRTjwfPT_good JnLRTjwfPT_by
+    - JnLRTjwfPT_cee JnLRTjwfPT_you JnLRTjwfPT_later
+    - JnLRTjwfPT_good JnLRTjwfPT_night
+    - JnLRTjwfPT_bye
+    - JnLRTjwfPT_goodbye
+    - JnLRTjwfPT_have JnLRTjwfPT_a JnLRTjwfPT_nice JnLRTjwfPT_day
+    - JnLRTjwfPT_see JnLRTjwfPT_you JnLRTjwfPT_around
+    - JnLRTjwfPT_bye JnLRTjwfPT_bye
+    - JnLRTjwfPT_see JnLRTjwfPT_you JnLRTjwfPT_later
+    - JnLRTjwfPT_talk JnLRTjwfPT_to JnLRTjwfPT_you JnLRTjwfPT_later
+    - JnLRTjwfPT_catch JnLRTjwfPT_you JnLRTjwfPT_later
+    - JnLRTjwfPT_ltr
+
+- intent: JnLRTjwfPT_affirm
+  examples: |
+    - JnLRTjwfPT_yes
+    - JnLRTjwfPT_y
+    - JnLRTjwfPT_indeed
+    - JnLRTjwfPT_of JnLRTjwfPT_course
+    - JnLRTjwfPT_that JnLRTjwfPT_sounds JnLRTjwfPT_good
+    - JnLRTjwfPT_correct
+
+- intent: JnLRTjwfPT_deny
+  examples: |
+    - JnLRTjwfPT_no
+    - JnLRTjwfPT_n
+    - JnLRTjwfPT_never
+    - JnLRTjwfPT_I JnLRTjwfPT_don't JnLRTjwfPT_think JnLRTjwfPT_so
+    - JnLRTjwfPT_don't JnLRTjwfPT_like JnLRTjwfPT_that
+    - JnLRTjwfPT_no JnLRTjwfPT_way
+    - JnLRTjwfPT_not JnLRTjwfPT_really
+    - JnLRTjwfPT_not JnLRTjwfPT_right JnLRTjwfPT_now
+    - JnLRTjwfPT_later JnLRTjwfPT_may JnLRTjwfPT_be
+    - JnLRTjwfPT_later
+    - JnLRTjwfPT_maybe
+    - JnLRTjwfPT_i JnLRTjwfPT_don't JnLRTjwfPT_want JnLRTjwfPT_to JnLRTjwfPT_share
+    - JnLRTjwfPT_i JnLRTjwfPT_dont JnLRTjwfPT_want JnLRTjwfPT_to JnLRTjwfPT_give
+    - JnLRTjwfPT_no JnLRTjwfPT_no
+
+- intent: JnLRTjwfPT_mood_great
+  examples: |
+    - JnLRTjwfPT_perfect
+    - JnLRTjwfPT_great
+    - JnLRTjwfPT_amazing
+    - JnLRTjwfPT_feeling JnLRTjwfPT_like JnLRTjwfPT_a JnLRTjwfPT_king
+    - JnLRTjwfPT_wonderful
+    - JnLRTjwfPT_I JnLRTjwfPT_am JnLRTjwfPT_feeling JnLRTjwfPT_very JnLRTjwfPT_good
+    - JnLRTjwfPT_I JnLRTjwfPT_am JnLRTjwfPT_great
+    - JnLRTjwfPT_I JnLRTjwfPT_am JnLRTjwfPT_amazing
+    - JnLRTjwfPT_I JnLRTjwfPT_am JnLRTjwfPT_going JnLRTjwfPT_to JnLRTjwfPT_save JnLRTjwfPT_the JnLRTjwfPT_world
+    - JnLRTjwfPT_super JnLRTjwfPT_stoked
+    - JnLRTjwfPT_extremely JnLRTjwfPT_good
+    - JnLRTjwfPT_so JnLRTjwfPT_so JnLRTjwfPT_perfect
+    - JnLRTjwfPT_so JnLRTjwfPT_good
+    - JnLRTjwfPT_so JnLRTjwfPT_perfect
+
+- intent: JnLRTjwfPT_mood_unhappy
+  examples: |
+    - JnLRTjwfPT_my JnLRTjwfPT_day JnLRTjwfPT_was JnLRTjwfPT_horrible
+    - JnLRTjwfPT_I JnLRTjwfPT_am JnLRTjwfPT_sad
+    - JnLRTjwfPT_I JnLRTjwfPT_don't JnLRTjwfPT_feel JnLRTjwfPT_very JnLRTjwfPT_well
+    - JnLRTjwfPT_I JnLRTjwfPT_am JnLRTjwfPT_disappointed
+    - JnLRTjwfPT_super JnLRTjwfPT_sad
+    - JnLRTjwfPT_I'm JnLRTjwfPT_so JnLRTjwfPT_sad
+    - JnLRTjwfPT_sad
+    - JnLRTjwfPT_very JnLRTjwfPT_sad
+    - JnLRTjwfPT_unhappy
+    - JnLRTjwfPT_not JnLRTjwfPT_good
+    - JnLRTjwfPT_not JnLRTjwfPT_very JnLRTjwfPT_good
+    - JnLRTjwfPT_extremly JnLRTjwfPT_sad
+    - JnLRTjwfPT_so JnLRTjwfPT_saad
+    - JnLRTjwfPT_so JnLRTjwfPT_sad
+
+- intent: JnLRTjwfPT_bot_challenge
+  examples: |
+    - JnLRTjwfPT_are JnLRTjwfPT_you JnLRTjwfPT_a JnLRTjwfPT_bot?
+    - JnLRTjwfPT_are JnLRTjwfPT_you JnLRTjwfPT_a JnLRTjwfPT_human?
+    - JnLRTjwfPT_am JnLRTjwfPT_I JnLRTjwfPT_talking JnLRTjwfPT_to JnLRTjwfPT_a JnLRTjwfPT_bot?
+    - JnLRTjwfPT_am JnLRTjwfPT_I JnLRTjwfPT_talking JnLRTjwfPT_to JnLRTjwfPT_a JnLRTjwfPT_human?
+
+- intent: JnLRTjwfPT_telephone
+  examples: |
+    - JnLRTjwfPT_9876543210
+    - JnLRTjwfPT_9177328688
+    - JnLRTjwfPT_1234567890
+    - JnLRTjwfPT_9898989898
+    - JnLRTjwfPT_9090909009
+    - JnLRTjwfPT_6789054321
+
+- intent: JnLRTjwfPT_email
+  examples: |
+    - JnLRTjwfPT_bharat@mauvetix.com
+    - JnLRTjwfPT_random@domain.com
+    - JnLRTjwfPT_testing@mail.com
+    - JnLRTjwfPT_as.mad@yahoo.co.in
+    - JnLRTjwfPT_domain@mainc.om
+
+- intent: JnLRTjwfPT_name
+  examples: |
+    - JnLRTjwfPT_bharath
+    - JnLRTjwfPT_lokesh
+    - JnLRTjwfPT_vinay
+    - JnLRTjwfPT_ashish
+    - JnLRTjwfPT_krishna
+    - JnLRTjwfPT_vk
+    - JnLRTjwfPT_pk
+
+# Mauvetix Solutions oOwiLmXXsD
+- intent: oOwiLmXXsD_greet
+  examples: |
+    - oOwiLmXXsD_hey
+    - oOwiLmXXsD_hello
+    - oOwiLmXXsD_hi
+    - oOwiLmXXsD_hello oOwiLmXXsD_there
+    - oOwiLmXXsD_good oOwiLmXXsD_morning
+    - oOwiLmXXsD_good oOwiLmXXsD_evening
+    - oOwiLmXXsD_moin
+    - oOwiLmXXsD_hey oOwiLmXXsD_there
+    - oOwiLmXXsD_let's oOwiLmXXsD_go
+    - oOwiLmXXsD_hey oOwiLmXXsD_dude
+    - oOwiLmXXsD_goodmorning
+    - oOwiLmXXsD_goodevening
+    - oOwiLmXXsD_good oOwiLmXXsD_afternoon
+
+- intent: oOwiLmXXsD_goodbye
+  examples: |
+    - oOwiLmXXsD_cu
+    - oOwiLmXXsD_good oOwiLmXXsD_by
+    - oOwiLmXXsD_cee oOwiLmXXsD_you oOwiLmXXsD_later
+    - oOwiLmXXsD_good oOwiLmXXsD_night
+    - oOwiLmXXsD_bye
+    - oOwiLmXXsD_goodbye
+    - oOwiLmXXsD_have oOwiLmXXsD_a oOwiLmXXsD_nice oOwiLmXXsD_day
+    - oOwiLmXXsD_see oOwiLmXXsD_you oOwiLmXXsD_around
+    - oOwiLmXXsD_bye oOwiLmXXsD_bye
+    - oOwiLmXXsD_see oOwiLmXXsD_you oOwiLmXXsD_later
+
+- intent: oOwiLmXXsD_affirm
+  examples: |
+    - oOwiLmXXsD_yes
+    - oOwiLmXXsD_y
+    - oOwiLmXXsD_indeed
+    - oOwiLmXXsD_of oOwiLmXXsD_course
+    - oOwiLmXXsD_that oOwiLmXXsD_sounds oOwiLmXXsD_good
+    - oOwiLmXXsD_correct
+
+- intent: oOwiLmXXsD_deny
+  examples: |
+    - oOwiLmXXsD_no
+    - oOwiLmXXsD_n
+    - oOwiLmXXsD_never
+    - oOwiLmXXsD_I oOwiLmXXsD_don't oOwiLmXXsD_think oOwiLmXXsD_so
+    - oOwiLmXXsD_don't oOwiLmXXsD_like oOwiLmXXsD_that
+    - oOwiLmXXsD_no oOwiLmXXsD_way
+    - oOwiLmXXsD_not oOwiLmXXsD_really
+
+- intent: oOwiLmXXsD_mood_great
+  examples: |
+    - oOwiLmXXsD_perfect
+    - oOwiLmXXsD_great
+    - oOwiLmXXsD_amazing
+    - oOwiLmXXsD_feeling oOwiLmXXsD_like oOwiLmXXsD_a oOwiLmXXsD_king
+    - oOwiLmXXsD_wonderful
+    - oOwiLmXXsD_I oOwiLmXXsD_am oOwiLmXXsD_feeling oOwiLmXXsD_very oOwiLmXXsD_good
+    - oOwiLmXXsD_I oOwiLmXXsD_am oOwiLmXXsD_great
+    - oOwiLmXXsD_I oOwiLmXXsD_am oOwiLmXXsD_amazing
+    - oOwiLmXXsD_I oOwiLmXXsD_am oOwiLmXXsD_going oOwiLmXXsD_to oOwiLmXXsD_save oOwiLmXXsD_the oOwiLmXXsD_world
+    - oOwiLmXXsD_super oOwiLmXXsD_stoked
+    - oOwiLmXXsD_extremely oOwiLmXXsD_good
+    - oOwiLmXXsD_so oOwiLmXXsD_so oOwiLmXXsD_perfect
+    - oOwiLmXXsD_so oOwiLmXXsD_good
+    - oOwiLmXXsD_so oOwiLmXXsD_perfect
+
+- intent: oOwiLmXXsD_telephone
+  examples: |
+    - oOwiLmXXsD_9876543210
+    - oOwiLmXXsD_9177328688
+    - oOwiLmXXsD_1234567890
+    - oOwiLmXXsD_9898989898
+    - oOwiLmXXsD_9090909009
+    - oOwiLmXXsD_6789054321
+
+- intent: oOwiLmXXsD_email
+  examples: |
+    - oOwiLmXXsD_bharat@mauvetix.com
+    - oOwiLmXXsD_random@domain.com
+    - oOwiLmXXsD_testing@mail.com
+    - oOwiLmXXsD_as.mad@yahoo.co.in
+    - oOwiLmXXsD_domain@mainc.om
+
+- intent: oOwiLmXXsD_name
+  examples: |
+    - oOwiLmXXsD_bharath
+    - oOwiLmXXsD_lokesh
+    - oOwiLmXXsD_vinay
+    - oOwiLmXXsD_ashish
+    - oOwiLmXXsD_krishna
+    - oOwiLmXXsD_vk
+    - oOwiLmXXsD_pk
+
+- intent: oOwiLmXXsD_mood_unhappy
+  examples: |
+    - oOwiLmXXsD_my oOwiLmXXsD_day oOwiLmXXsD_was oOwiLmXXsD_horrible
+    - oOwiLmXXsD_I oOwiLmXXsD_am oOwiLmXXsD_sad
+    - oOwiLmXXsD_I oOwiLmXXsD_don't oOwiLmXXsD_feel oOwiLmXXsD_very oOwiLmXXsD_well
+    - oOwiLmXXsD_I oOwiLmXXsD_am oOwiLmXXsD_disappointed
+    - oOwiLmXXsD_super oOwiLmXXsD_sad
+    - oOwiLmXXsD_I'm oOwiLmXXsD_so oOwiLmXXsD_sad
+    - oOwiLmXXsD_sad
+    - oOwiLmXXsD_very oOwiLmXXsD_sad
+    - oOwiLmXXsD_unhappy
+    - oOwiLmXXsD_not oOwiLmXXsD_good
+    - oOwiLmXXsD_not oOwiLmXXsD_very oOwiLmXXsD_good
+    - oOwiLmXXsD_extremly oOwiLmXXsD_sad
+    - oOwiLmXXsD_so oOwiLmXXsD_saad
+    - oOwiLmXXsD_so oOwiLmXXsD_sad
+
+- intent: oOwiLmXXsD_bot_challenge
+  examples: |
+    - oOwiLmXXsD_are oOwiLmXXsD_you oOwiLmXXsD_a oOwiLmXXsD_bot?
+    - oOwiLmXXsD_are oOwiLmXXsD_you oOwiLmXXsD_a oOwiLmXXsD_human?
+    - oOwiLmXXsD_am oOwiLmXXsD_I oOwiLmXXsD_talking oOwiLmXXsD_to oOwiLmXXsD_a oOwiLmXXsD_bot?
+    - oOwiLmXXsD_am oOwiLmXXsD_I oOwiLmXXsD_talking oOwiLmXXsD_to oOwiLmXXsD_a oOwiLmXXsD_human?
+
+
+- intent: oOwiLmXXsD_chatbots
+  examples: |
+    - oOwiLmXXsD_what oOwiLmXXsD_are oOwiLmXXsD_chatbots
+    - oOwiLmXXsD_chatbots
+    - oOwiLmXXsD_do oOwiLmXXsD_you oOwiLmXXsD_provide oOwiLmXXsD_conversational oOwiLmXXsD_chatbot oOwiLmXXsD_services
+    - oOwiLmXXsD_I oOwiLmXXsD_want oOwiLmXXsD_omnichannel oOwiLmXXsD_experience
+    - oOwiLmXXsD_I oOwiLmXXsD_want oOwiLmXXsD_whatsapp oOwiLmXXsD_chatbot
+
+- intent: oOwiLmXXsD_website_development
+  examples: |
+    - oOwiLmXXsD_website oOwiLmXXsD_development
+    - oOwiLmXXsD_i oOwiLmXXsD_need oOwiLmXXsD_a oOwiLmXXsD_website oOwiLmXXsD_for oOwiLmXXsD_my oOwiLmXXsD_business
+    - oOwiLmXXsD_website oOwiLmXXsD_services
+    - oOwiLmXXsD_can oOwiLmXXsD_you oOwiLmXXsD_create oOwiLmXXsD_a oOwiLmXXsD_static oOwiLmXXsD_website 
+
+- intent: oOwiLmXXsD_digital_marketing
+  examples: |
+    - oOwiLmXXsD_digital oOwiLmXXsD_marketing
+    - oOwiLmXXsD_can oOwiLmXXsD_you oOwiLmXXsD_optimize oOwiLmXXsD_my oOwiLmXXsD_website
+    - oOwiLmXXsD_i oOwiLmXXsD_need oOwiLmXXsD_seo
+    - oOwiLmXXsD_i oOwiLmXXsD_need oOwiLmXXsD_lead oOwiLmXXsD_generation
+
+- intent: oOwiLmXXsD_demo
+  examples: |
+    - oOwiLmXXsD_how oOwiLmXXsD_to oOwiLmXXsD_reach oOwiLmXXsD_you
+    - oOwiLmXXsD_contact oOwiLmXXsD_us
+    - oOwiLmXXsD_call oOwiLmXXsD_me
+
+- intent: oOwiLmXXsD_recruitments
+  examples: |
+    - oOwiLmXXsD_recruitment
+    - oOwiLmXXsD_i oOwiLmXXsD_want oOwiLmXXsD_hr oOwiLmXXsD_services
+    - oOwiLmXXsD_I oOwiLmXXsD_need oOwiLmXXsD_to oOwiLmXXsD_hire oOwiLmXXsD_candidates oOwiLmXXsD_for oOwiLmXXsD_my oOwiLmXXsD_company

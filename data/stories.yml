@@ -1,0 +1,936 @@
+version: "2.0"
+
+stories:
+# cent percent 35cCbsE6EF4dxgVQnh
+- story: welcome message_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_get_started
+  - action: action_get_started_35cCbsE6EF4dxgVQnh
+
+- story: just browsing_35cCbsE6EF4dxgVQnh.
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_close
+  - action: action_close_35cCbsE6EF4dxgVQnh
+
+- story: Greet_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_greet
+  - action: utter_35cCbsE6EF4dxgVQnh_greet
+
+- story: options
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_options
+  - action: utter_35cCbsE6EF4dxgVQnh_greet
+
+- story: services_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_services
+  - action: utter_35cCbsE6EF4dxgVQnh_services
+
+
+- story: ott_solutions
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_ott_solutions
+  - action: action_ott_solutions_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: action_submit_35cCbsE6EF4dxgVQnh
+
+- story: ott_solutions + stop name_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_ott_solutions
+  - action: action_ott_solutions_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+- story: ott_solutions + stop number_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_ott_solutions
+  - action: action_ott_solutions_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+- story: ott_solutions + stop email_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_ott_solutions
+  - action: action_ott_solutions_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+
+- story: IPTV_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_iptv
+  - action: action_iptv_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details  
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: action_submit_35cCbsE6EF4dxgVQnh
+
+
+- story: IPTV + stop name_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_iptv
+  - action: action_iptv_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+- story: IPTV + stop number_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_iptv
+  - action: action_iptv_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+- story: IPTV + stop email_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_iptv
+  - action: action_iptv_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+
+- story: subscription
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_subscription
+  - action: action_subscription_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: action_submit_35cCbsE6EF4dxgVQnh
+
+- story: subscription + stop name_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_subscription
+  - action: action_subscription_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+- story: subsctiption + stop number_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_subscription
+  - action: action_subscription_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+- story: subscription + stop email_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_subscription
+  - action: action_subscription_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+
+- story: content_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_content
+  - action: action_content_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: action_submit_35cCbsE6EF4dxgVQnh
+
+- story: content + stop name_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_content
+  - action: action_content_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+- story: content + stop number_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_content
+  - action: action_content_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+- story: content + stop email_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_content
+  - action: action_content_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+
+- story: monetization_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_monetization
+  - action: action_monetization_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: action_submit_35cCbsE6EF4dxgVQnh
+
+- story: monetization + stop name_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_monetization
+  - action: action_monetization_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+- story: monetization + stop number_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_monetization
+  - action: action_monetization_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+- story: monetization + stop email_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_monetization
+  - action: action_monetization_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_affirm
+  - action: utter_35cCbsE6EF4dxgVQnh_form_details
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_no
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_35cCbsE6EF4dxgVQnh_form_close
+
+
+# contact form later may be
+
+- story: ott_solutions_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_ott_solutions
+  - action: action_ott_solutions_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_form_later
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: action_submit_35cCbsE6EF4dxgVQnh
+
+- story: IPTV_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_iptv
+  - action: action_iptv_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_form_later
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: action_submit_35cCbsE6EF4dxgVQnh
+
+- story: subscription_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_subscription
+  - action: action_subscription_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_form_later
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: action_submit_35cCbsE6EF4dxgVQnh
+
+- story: content_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_content
+  - action: action_content_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_form_later
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: action_submit_35cCbsE6EF4dxgVQnh
+
+- story: monetization_35cCbsE6EF4dxgVQnh
+  steps:
+  - intent: 35cCbsE6EF4dxgVQnh_monetization
+  - action: action_monetization_35cCbsE6EF4dxgVQnh
+  - action: action_form_35cCbsE6EF4dxgVQnh
+  - intent: 35cCbsE6EF4dxgVQnh_deny
+  - action: utter_35cCbsE6EF4dxgVQnh_form_later
+  - action: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: name_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: number_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null 
+  - action: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: email_form_35cCbsE6EF4dxgVQnh
+  - active_loop: null  
+  - action: action_submit_35cCbsE6EF4dxgVQnh
+
+
+  # appointment booking sbCc4FE6
+- story: Vehicle Servicing_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_vehicle_servicing
+  - action: utter_sbCc4FE6_vehicle_servicing
+
+- story: Book service_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_vehicle_book
+  - action: utter_sbCc4FE6_vehicle_book
+  - action: contact_form_sbCc4FE6
+  - active_loop: name_form_sbCc4FE6
+  - active_loop: null
+  - action: utter_sbCc4FE6_vehicle_model
+  - intent: sbCc4FE6_vehicle_model
+  - action: action_service_options_sbCc4FE6
+  - intent: sbCc4FE6_service_type
+  - action: action_time_sbCc4FE6
+  - intent: sbCc4FE6_date
+  - action: action_inform_sbCc4FE6
+  - intent: sbCc4FE6_affirm
+  - action: action_submit_sbCc4FE6
+  - action: utter_sbCc4FE6_anythingelse
+
+- story: Latest bikes_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_latest_bikes
+  - action: action_bikes_carousel_sbCc4FE6
+  - action: utter_sbCc4FE6_anythingelse
+
+- story: Locate a store_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_vehicle_store_locator
+  - action: utter_sbCc4FE6_vehicle_store_locator
+  - intent: sbCc4FE6_store_location
+  - action: utter_sbCc4FE6_store_location
+  - action: utter_sbCc4FE6_anythingelse
+
+- story: Business enquiries_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_business_enquiries
+  - action: utter_sbCc4FE6_business_enquiries
+  - action: utter_sbCc4FE6_anythingelse
+
+- story: Vehicle Booking status_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_vehicle_booking_status
+  - action: utter_sbCc4FE6_vehicle_status
+  - action: booking_form_sbCc4FE6
+  - active_loop: booking_form_sbCc4FE6
+  - active_loop: null
+  - action: action_booking_status_sbCc4FE6
+
+
+- story: Doctor appointment_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_doctor_appointment
+  - action: utter_sbCc4FE6_doctor_appointment
+
+
+- story: Our specialities_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_doctor_specialities
+  - action: action_doctor_speciality_carousel_sbCc4FE6
+  - action: utter_sbCc4FE6_anythingelse_doctor
+
+
+- story: Find a doctor_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_doctor_availability
+  - action: utter_sbCc4FE6_doctor_availability
+  - intent: sbCc4FE6_speciality
+  - action: action_speciality_carousel_sbCc4FE6
+  - action: utter_sbCc4FE6_anythingelse_doctor
+
+- story: Business enquiries Doctor_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_business_enquiries_doctor
+  - action: utter_sbCc4FE6_business_enquiries
+  - action: utter_sbCc4FE6_anythingelse_doctor
+
+- story: Book an appointment_sbCc4FE6
+  steps:
+  - intent: sbCc4FE6_doctor_book
+  - action: utter_sbCc4FE6_doctor_book
+  - action: contact_form_sbCc4FE6
+  - active_loop: name_form_sbCc4FE6
+  - active_loop: null
+  - action: utter_sbCc4FE6_doctor_availability
+  - intent: sbCc4FE6_speciality
+  - action: action_appointment_time_sbCc4FE6
+  - intent: sbCc4FE6_date
+  - action: action_select_carousel_sbCc4FE6
+  - intent: sbCc4FE6_name
+  - action: action_slots_sbCc4FE6
+  - intent: sbCc4FE6_time
+  - action: action_appointment_submit_sbCc4FE6
+  - action: utter_sbCc4FE6_anythingelse_doctor
+
+
+# brundavan qFH0i9NeQv_
+
+- story: Our specialities
+  steps:
+  - intent: qFH0i9NeQv_doctor_specialities
+  - action: action_doctor_speciality_carousel_qFH0i9NeQv
+  - action: utter_qFH0i9NeQv_anythingelse_doctor
+
+
+- story: Find a doctor
+  steps:
+  - intent: qFH0i9NeQv_doctor_availability
+  - action: utter_qFH0i9NeQv_doctor_availability
+  - intent: qFH0i9NeQv_speciality
+  - action: action_speciality_carousel_qFH0i9NeQv
+  - action: utter_qFH0i9NeQv_anythingelse_doctor
+
+- story: Business enquiries Doctor
+  steps:
+  - intent: qFH0i9NeQv_business_enquiries_doctor
+  - action: utter_qFH0i9NeQv_business_enquiries
+  - action: utter_qFH0i9NeQv_anythingelse_doctor
+
+- story: Book an appointment
+  steps:
+  - intent: qFH0i9NeQv_doctor_book
+  - action: utter_qFH0i9NeQv_doctor_book
+  - action: contact_form_qFH0i9NeQv
+  - active_loop: contact_form_qFH0i9NeQv
+  - active_loop: null
+  - action: utter_qFH0i9NeQv_doctor_availability
+  - intent: qFH0i9NeQv_speciality
+  - action: action_appointment_time_qFH0i9NeQv
+  - intent: qFH0i9NeQv_date
+  - action: action_select_carousel_qFH0i9NeQv
+  - intent: qFH0i9NeQv_name
+  - action: action_appointment_submit_qFH0i9NeQv
+  - action: utter_qFH0i9NeQv_anythingelse_doctor
+
+
+# skipprz JnLRTjwfPT
+- story: welcome message_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_get_started
+  - action: action_get_started_JnLRTjwfPT
+
+- story: just browsing_JnLRTjwfPT.
+  steps:
+  - intent: JnLRTjwfPT_close
+  - action: action_close_JnLRTjwfPT
+
+- story: Greet_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_greet
+  - action: utter_JnLRTjwfPT_greet
+
+- story: options
+  steps:
+  - intent: JnLRTjwfPT_options
+  - action: utter_JnLRTjwfPT_greet
+
+- story: services_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_services
+  - action: utter_JnLRTjwfPT_services
+
+- story: vendor_management
+  steps:
+  - intent: JnLRTjwfPT_vendor_management
+  - action: name_form_JnLRTjwfPT
+  - active_loop: name_form_JnLRTjwfPT
+  - active_loop: null  
+  - action: utter_JnLRTjwfPT_vendor_management
+
+- story: vendor_management + stop name_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_vendor_management
+  - action: name_form_JnLRTjwfPT
+  - active_loop: name_form_JnLRTjwfPT
+  - intent: JnLRTjwfPT_deny
+  - action: utter_JnLRTjwfPT_no
+  - action: name_form_JnLRTjwfPT
+  - intent: JnLRTjwfPT_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_JnLRTjwfPT_form_close
+
+
+- story: am vendor
+  steps:
+  - intent: JnLRTjwfPT_vendor
+  - action: utter_JnLRTjwfPT_vendor
+  - action: utter_JnLRTjwfPT_anythingelse
+
+- story: need vendor
+  steps:
+  - intent: JnLRTjwfPT_need_vendor
+  - action: utter_JnLRTjwfPT_need_vendor
+  - action: number_form_JnLRTjwfPT
+  - active_loop: number_form_JnLRTjwfPT
+  - active_loop: null 
+  - action: action_submit_JnLRTjwfPT
+
+- story: need_vendor + stop number_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_need_vendor
+  - action: utter_JnLRTjwfPT_need_vendor
+  - action: number_form_JnLRTjwfPT
+  - active_loop: number_form_JnLRTjwfPT
+  - intent: JnLRTjwfPT_deny
+  - action: utter_JnLRTjwfPT_no
+  - action: number_form_JnLRTjwfPT
+  - intent: JnLRTjwfPT_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_JnLRTjwfPT_form_close
+
+
+- story: commodities_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_commodities
+  - action: utter_JnLRTjwfPT_commodities
+
+- story: buyer_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_buyer
+  - action: number_form_JnLRTjwfPT
+  - active_loop: number_form_JnLRTjwfPT
+  - active_loop: null 
+  - action: action_buyer_commodity_JnLRTjwfPT
+
+- story: buyer_JnLRTjwfPT + stop number
+  steps:
+  - intent: JnLRTjwfPT_buyer
+  - action: number_form_JnLRTjwfPT
+  - active_loop: number_form_JnLRTjwfPT
+  - intent: JnLRTjwfPT_deny
+  - action: utter_JnLRTjwfPT_no
+  - action: number_form_JnLRTjwfPT
+  - intent: JnLRTjwfPT_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_JnLRTjwfPT_form_close
+
+# 
+- story: seller_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_seller
+  - action: number_form_JnLRTjwfPT
+  - active_loop: number_form_JnLRTjwfPT
+  - active_loop: null 
+  - action: action_seller_commodity_JnLRTjwfPT
+
+- story: seller_JnLRTjwfPT + stop number
+  steps:
+  - intent: JnLRTjwfPT_seller
+  - action: number_form_JnLRTjwfPT
+  - active_loop: number_form_JnLRTjwfPT
+  - intent: JnLRTjwfPT_deny
+  - action: utter_JnLRTjwfPT_no
+  - action: number_form_JnLRTjwfPT
+  - intent: JnLRTjwfPT_deny    
+  - action: action_deactivate_loop
+  - active_loop: null 
+  - action: utter_JnLRTjwfPT_form_close
+
+# 
+
+- story: funding
+  steps:
+  - intent: JnLRTjwfPT_funding
+  - action: action_funding_JnLRTjwfPT
+
+- story: co_founder_search_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_co_founder_search
+  - action: action_co_founder_search_JnLRTjwfPT
+  - action: utter_JnLRTjwfPT_founder
+
+- story: become co founder
+  steps:
+  - intent: JnLRTjwfPT_become_co_founder
+  - action: utter_JnLRTjwfPT_become_co_founder_register
+  - action: utter_JnLRTjwfPT_anythingelse  
+
+- story: need co founder
+  steps:
+  - intent: JnLRTjwfPT_need_founder
+  - action: utter_JnLRTjwfPT_need_founder_register
+  - action: utter_JnLRTjwfPT_anythingelse  
+
+- story: mentorship_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_mentorship
+  - action: action_mentorship_JnLRTjwfPT
+
+- story: mentor_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_mentorship
+  - action: name_form_JnLRTjwfPT
+  - active_loop: name_form_JnLRTjwfPT
+  - active_loop: null  
+  - action: number_form_JnLRTjwfPT
+  - active_loop: number_form_JnLRTjwfPT
+  - active_loop: null 
+  - action: action_mentor_submit_JnLRTjwfPT
+
+- story: partnership_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_partnership
+  - action: action_partnership_JnLRTjwfPT
+
+- story: careers_JnLRTjwfPT
+  steps:
+  - intent: JnLRTjwfPT_careers
+  - action: action_careers_JnLRTjwfPT
+
+
+# Mauvetix Solutions oOwiLmXXsD_ 
+- story: oOwiLmXXsD_welcome
+  steps:
+  - intent: oOwiLmXXsD_get_started
+  - action: action_greet_oOwiLmXXsD
+  
+- story: oOwiLmXXsD_greet
+  steps:
+  - intent: oOwiLmXXsD_greet
+  - action: action_greet_oOwiLmXXsD
+
+- story: oOwiLmXXsD_Chatbots
+  steps:
+  - intent: oOwiLmXXsD_chatbots
+  - action: action_chatbot_oOwiLmXXsD
+
+- story: oOwiLmXXsD_website_development
+  steps:
+  - intent: oOwiLmXXsD_website_development
+  - action: action_website_development_oOwiLmXXsD
+
+- story: oOwiLmXXsD_digital_marketing
+  steps:
+  - intent: oOwiLmXXsD_digital_marketing
+  - action: action_digital_marketing_oOwiLmXXsD
+
+
+- story: oOwiLmXXsD_recruitments
+  steps:
+  - intent: oOwiLmXXsD_recruitments
+  - action: action_recruitment_oOwiLmXXsD
+  - action: utter_oOwiLmXXsD_anythingelse
+
+
+- story: oOwiLmXXsD_demo
+  steps:
+  - intent: oOwiLmXXsD_demo
+  - action: name_form_oOwiLmXXsD
+  - active_loop: name_form_oOwiLmXXsD
+  - active_loop: null
+  - action: number_form_oOwiLmXXsD
+  - active_loop: number_form_oOwiLmXXsD
+  - active_loop: null
+  - action: email_form_oOwiLmXXsD
+  - active_loop: email_form_oOwiLmXXsD
+  - active_loop: null
+  - action: action_submit_oOwiLmXXsD
+
+- story: oOwiLmXXsD_demo + stop name_form_oOwiLmXXsD
+  steps:
+  - intent: oOwiLmXXsD_demo
+  - action: name_form_oOwiLmXXsD
+  - active_loop: name_form_oOwiLmXXsD
+  - intent: oOwiLmXXsD_deny
+  - action: utter_oOwiLmXXsD_no
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: utter_oOwiLmXXsD_close
+
+- story: oOwiLmXXsD_demo + stop number_form_oOwiLmXXsD
+  steps:
+  - intent: oOwiLmXXsD_demo
+  - action: name_form_oOwiLmXXsD
+  - active_loop: name_form_oOwiLmXXsD
+  - active_loop: null
+  - action: number_form_oOwiLmXXsD
+  - active_loop: number_form_oOwiLmXXsD
+  - intent: oOwiLmXXsD_deny
+  - action: utter_oOwiLmXXsD_no
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: utter_oOwiLmXXsD_close
+
+- story: oOwiLmXXsD_demo + stop email_form_oOwiLmXXsD
+  steps:
+  - intent: oOwiLmXXsD_demo
+  - action: name_form_oOwiLmXXsD
+  - active_loop: name_form_oOwiLmXXsD
+  - active_loop: null
+  - action: number_form_oOwiLmXXsD
+  - active_loop: number_form_oOwiLmXXsD
+  - active_loop: null
+  - action: email_form_oOwiLmXXsD
+  - active_loop: email_form_oOwiLmXXsD
+  - intent: oOwiLmXXsD_deny
+  - action: utter_oOwiLmXXsD_no
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: utter_oOwiLmXXsD_close
+
+- story: oOwiLmXXsD_close
+  steps:
+  - intent: oOwiLmXXsD_close
+  - action: utter_oOwiLmXXsD_close
+
+- story: oOwiLmXXsD_options
+  steps:
+  - intent: oOwiLmXXsD_options
+  - action: utter_oOwiLmXXsD_services

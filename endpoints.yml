@@ -1,0 +1,12 @@
+action_endpoint:
+ url: "http://localhost:5056/webhook"
+
+
+
+tracker_store:
+ type: SQL #mongod
+ dialect: mysql
+ url: 127.0.0.1:3306 #<url to your mongo instance, e.g. mongodb://localhost:27017>
+ db: new_schema #<name of the db within your mongo instance, e.g. rasa>
+ username: root #<username used for authentication>
+ password: admin #<password used for authentication>

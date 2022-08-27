@@ -1,0 +1,886 @@
+version: "2.0"
+
+intents:
+# cent percent 35cCbsE6EF4dxgVQnh_
+  - 35cCbsE6EF4dxgVQnh_greet
+  - 35cCbsE6EF4dxgVQnh_goodbye
+  - 35cCbsE6EF4dxgVQnh_affirm
+  - 35cCbsE6EF4dxgVQnh_deny
+  - 35cCbsE6EF4dxgVQnh_mood_great
+  - 35cCbsE6EF4dxgVQnh_mood_unhappy
+  - 35cCbsE6EF4dxgVQnh_bot_challenge
+  - 35cCbsE6EF4dxgVQnh_get_started
+  - 35cCbsE6EF4dxgVQnh_services
+  - 35cCbsE6EF4dxgVQnh_close
+  - 35cCbsE6EF4dxgVQnh_ott_solutions
+  - 35cCbsE6EF4dxgVQnh_iptv
+  - 35cCbsE6EF4dxgVQnh_subscription
+  - 35cCbsE6EF4dxgVQnh_content
+  - 35cCbsE6EF4dxgVQnh_monetization
+  - 35cCbsE6EF4dxgVQnh_telephone
+  - 35cCbsE6EF4dxgVQnh_name
+  - 35cCbsE6EF4dxgVQnh_email
+  - 35cCbsE6EF4dxgVQnh_options
+# appointment booking sbCc4FE6_
+  - sbCc4FE6_greet
+  - sbCc4FE6_goodbye
+  - sbCc4FE6_affirm
+  - sbCc4FE6_deny
+  - sbCc4FE6_mood_great
+  - sbCc4FE6_mood_unhappy
+  - sbCc4FE6_bot_challenge
+  - sbCc4FE6_vehicle_options
+  - sbCc4FE6_doctor_options
+  - sbCc4FE6_get_started
+  - sbCc4FE6_vehicle_servicing
+  - sbCc4FE6_doctor_appointment
+  - sbCc4FE6_telephone
+  - sbCc4FE6_email
+  - sbCc4FE6_name
+  - sbCc4FE6_vehicle_book
+  - sbCc4FE6_latest_bikes
+  - sbCc4FE6_vehicle_store_locator
+  - sbCc4FE6_vehicle_booking_status
+  - sbCc4FE6_business_enquiries
+  - sbCc4FE6_business_enquiries_doctor
+  - sbCc4FE6_store_location
+  - sbCc4FE6_vehicle_model
+  - sbCc4FE6_service_type
+  - sbCc4FE6_close
+  - sbCc4FE6_date
+  - sbCc4FE6_time
+  - sbCc4FE6_doctor_book
+  - sbCc4FE6_speciality
+  - sbCc4FE6_doctor_specialities
+  - sbCc4FE6_doctor_availability
+  #  brundavan qFH0i9NeQv_
+  - qFH0i9NeQv_greet
+  - qFH0i9NeQv_goodbye
+  - qFH0i9NeQv_affirm
+  - qFH0i9NeQv_deny
+  - qFH0i9NeQv_mood_great
+  - qFH0i9NeQv_mood_unhappy
+  - qFH0i9NeQv_bot_challenge
+  - qFH0i9NeQv_doctor_options
+  - qFH0i9NeQv_get_started
+  - qFH0i9NeQv_telephone
+  - qFH0i9NeQv_email
+  - qFH0i9NeQv_name
+  - qFH0i9NeQv_business_enquiries_doctor
+  - qFH0i9NeQv_close
+  - qFH0i9NeQv_date
+  - qFH0i9NeQv_doctor_book
+  - qFH0i9NeQv_speciality
+  - qFH0i9NeQv_doctor_specialities
+  - qFH0i9NeQv_doctor_availability
+# skipprz JnLRTjwfPT_
+  - JnLRTjwfPT_greet
+  - JnLRTjwfPT_goodbye
+  - JnLRTjwfPT_affirm
+  - JnLRTjwfPT_deny
+  - JnLRTjwfPT_mood_great
+  - JnLRTjwfPT_mood_unhappy
+  - JnLRTjwfPT_bot_challenge
+  - JnLRTjwfPT_get_started
+  - JnLRTjwfPT_services
+  - JnLRTjwfPT_close
+  - JnLRTjwfPT_vendor_management
+  - JnLRTjwfPT_vendor
+  - JnLRTjwfPT_need_vendor
+  - JnLRTjwfPT_commodities
+  - JnLRTjwfPT_buyer
+  - JnLRTjwfPT_seller  
+  - JnLRTjwfPT_funding
+  - JnLRTjwfPT_co_founder_search
+  - JnLRTjwfPT_become_co_founder
+  - JnLRTjwfPT_need_founder
+  - JnLRTjwfPT_mentorship
+  - JnLRTjwfPT_partnership
+  - JnLRTjwfPT_careers
+  - JnLRTjwfPT_telephone
+  - JnLRTjwfPT_name
+  - JnLRTjwfPT_email
+  - JnLRTjwfPT_options
+# Mauvetix Solutions oOwiLmXXsD
+  - oOwiLmXXsD_greet
+  - oOwiLmXXsD_get_started  
+  - oOwiLmXXsD_goodbye
+  - oOwiLmXXsD_affirm
+  - oOwiLmXXsD_deny
+  - oOwiLmXXsD_mood_great
+  - oOwiLmXXsD_mood_unhappy
+  - oOwiLmXXsD_bot_challenge
+  - oOwiLmXXsD_telephone
+  - oOwiLmXXsD_email
+  - oOwiLmXXsD_name
+  - oOwiLmXXsD_close
+  - oOwiLmXXsD_options
+  - oOwiLmXXsD_chatbots
+  - oOwiLmXXsD_website_development
+  - oOwiLmXXsD_digital_marketing
+  - oOwiLmXXsD_recruitments
+  - oOwiLmXXsD_demo
+
+
+slots:
+# cent percent  35cCbsE6EF4dxgVQnh
+  name_35cCbsE6EF4dxgVQnh:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  name_invalid_35cCbsE6EF4dxgVQnh:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  email_35cCbsE6EF4dxgVQnh:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  email_invalid_35cCbsE6EF4dxgVQnh:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_35cCbsE6EF4dxgVQnh:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_invalid_35cCbsE6EF4dxgVQnh:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  name_counter_35cCbsE6EF4dxgVQnh:
+    type: float
+    auto_fill: false
+    initial_value: 0
+    influence_conversation: false
+  number_counter_35cCbsE6EF4dxgVQnh:
+    type: float
+    auto_fill: false
+    initial_value: 0
+    influence_conversation: false
+  email_counter_35cCbsE6EF4dxgVQnh:
+    type: float
+    auto_fill: false
+    initial_value: 0
+    influence_conversation: false
+# appointment booking sbCc4FE6
+  name_sbCc4FE6:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  name_invalid_sbCc4FE6:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  email_sbCc4FE6:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  email_invalid_sbCc4FE6:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_sbCc4FE6:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_invalid_sbCc4FE6:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  model_sbCc4FE6:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  service_type_sbCc4FE6:
+    type: any
+    auto_fill: false
+    influence_conversation: false
+  date_sbCc4FE6:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  booking_sbCc4FE6:
+    type: any
+    auto_fill: false
+    influence_conversation: false
+  department_sbCc4FE6:
+    type: any
+    auto_fill: false
+    influence_conversation: false
+  doctor_sbCc4FE6:
+    type: any
+    auto_fill: false
+    influence_conversation: false
+
+# brundavan qFH0i9NeQv_
+  name_qFH0i9NeQv:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  name_invalid_qFH0i9NeQv:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  email_qFH0i9NeQv:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  email_invalid_qFH0i9NeQv:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_qFH0i9NeQv:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_invalid_qFH0i9NeQv:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  date_qFH0i9NeQv:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  department_qFH0i9NeQv:
+    type: any
+    auto_fill: false
+    influence_conversation: false
+# skipprz  JnLRTjwfPT
+  name_JnLRTjwfPT:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  name_invalid_JnLRTjwfPT:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_JnLRTjwfPT:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_invalid_JnLRTjwfPT:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  name_counter_JnLRTjwfPT:
+    type: float
+    auto_fill: false
+    initial_value: 0
+    influence_conversation: false
+  number_counter_JnLRTjwfPT:
+    type: float
+    auto_fill: false
+    initial_value: 0
+    influence_conversation: false
+# Mauvetix Solutions oOwiLmXXsD
+  name_oOwiLmXXsD:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  name_bool_oOwiLmXXsD:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  email_oOwiLmXXsD:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  email_bool_oOwiLmXXsD:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_oOwiLmXXsD:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_bool_oOwiLmXXsD:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  name_invalid_oOwiLmXXsD:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  email_invalid_oOwiLmXXsD:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  number_invalid_oOwiLmXXsD:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  business_oOwiLmXXsD:
+    type: float
+    auto_fill: false
+    initial_value: 0
+    influence_conversation: false
+
+
+
+responses:
+  utter_35cCbsE6EF4dxgVQnh_get_started:
+  - text: "Is there anything I can help you with?"
+    buttons:
+    - title: "Sure"
+      payload: "/35cCbsE6EF4dxgVQnh_services"
+    - title: "Nah, Just browsing."
+      payload: "/35cCbsE6EF4dxgVQnh_close"
+
+  utter_35cCbsE6EF4dxgVQnh_services:
+  - text: "You are in safe hands! Realize your digital dreams with our modular, secured and quick to deploy video platform."
+    buttons:
+    - title: "Custom OTT solutions"
+      payload: "/35cCbsE6EF4dxgVQnh_ott_solutions"
+    - title: "IPTV - Complete package"
+      payload: "/35cCbsE6EF4dxgVQnh_iptv"
+    - title: "Subscription management system"
+      payload: "/35cCbsE6EF4dxgVQnh_subscription"
+    - title: "Content services"
+      payload: "/35cCbsE6EF4dxgVQnh_content"
+    - title: "Monetization solutions"
+      payload: "/35cCbsE6EF4dxgVQnh_monetization"
+
+  utter_35cCbsE6EF4dxgVQnh_greet:
+  - text: "How can I help you?"
+    buttons:
+    - title: "Custom OTT solutions"
+      payload: "/35cCbsE6EF4dxgVQnh_ott_solutions"
+    - title: "IPTV - Complete package"
+      payload: "/35cCbsE6EF4dxgVQnh_iptv"
+    - title: "Subscription management system"
+      payload: "/35cCbsE6EF4dxgVQnh_subscription"
+    - title: "Content services"
+      payload: "/35cCbsE6EF4dxgVQnh_content"
+    - title: "Monetization solutions"
+      payload: "/35cCbsE6EF4dxgVQnh_monetization"
+
+  utter_35cCbsE6EF4dxgVQnh_form:
+  - text: "Would you like a demo and check out our platform capabilities?"
+    buttons:
+    - title: "Sure"
+      payload: "/35cCbsE6EF4dxgVQnh_affirm"
+    - title: "Later may be"
+      payload: "/35cCbsE6EF4dxgVQnh_deny"
+
+  utter_35cCbsE6EF4dxgVQnh_no:
+  - text: "Understood you do not want to share with us, we need your details to proceed further."
+
+  utter_35cCbsE6EF4dxgVQnh_form_close:
+  - text: "Without your details, we can not proceed further. Thank you for contacting us, have a good day."
+
+  utter_35cCbsE6EF4dxgVQnh_form_details:
+  - text: "I just need a few more details to schedule a demo for you."
+
+  utter_35cCbsE6EF4dxgVQnh_form_later:
+  - text: "OK. We can stay in touch and I can share our product updates with you. (Will not spam you 😄 )"
+
+  utter_35cCbsE6EF4dxgVQnh_anythingelse:
+  - text: "Is there anything else I can help you with?"
+    buttons:
+    - title: "Yes"
+      payload: "/35cCbsE6EF4dxgVQnh_options"
+    - title: "No"
+      payload: "/35cCbsE6EF4dxgVQnh_goodbye"
+
+  utter_35cCbsE6EF4dxgVQnh_goodbye:
+  - text: "Thank you! Have a good day."
+
+  utter_35cCbsE6EF4dxgVQnh_iamabot:
+  - text: "I am a bot, powered by Mauvetix Solutions."
+
+# appointment booking sbCc4FE6
+  utter_sbCc4FE6_get_started:
+  - text: "Which service would you like to avail?"
+    buttons:
+    - title: "Vehicle servicing"
+      payload: "/sbCc4FE6_vehicle_servicing"
+    - title: "Doctor appointment"
+      payload: "/sbCc4FE6_doctor_appointment"
+
+  utter_sbCc4FE6_vehicle_servicing:
+  - text: "How can I help you?"
+    buttons:
+    - title: "Book service"
+      payload: "/sbCc4FE6_vehicle_book"
+    - title: "Latest bikes"
+      payload: "/sbCc4FE6_latest_bikes"
+    - title: "Locate a store"
+      payload: "/sbCc4FE6_vehicle_store_locator"
+    - title: "Business enquiries"
+      payload: "/sbCc4FE6_business_enquiries"
+    - title: "Vehicle Booking status"
+      payload: "/sbCc4FE6_vehicle_booking_status"
+
+  utter_sbCc4FE6_vehicle_book:
+  - text: "Please share the following information to confirm your booking."
+
+  utter_sbCc4FE6_vehicle_status:
+  - text: "Please share the following information to find your booking."  
+
+  utter_sbCc4FE6_vehicle_model:
+  - text: "Please select your vehicle model"
+    buttons:
+    - title: "KTM"
+      payload: "sbCc4FE6_KTM"
+    - title: "Royal Enfield"
+      payload: "sbCc4FE6_Royal sbCc4FE6_Enfield"
+    - title: "Pulsar"
+      payload: "sbCc4FE6_Pulsar"
+
+  utter_sbCc4FE6_vehicle_store_locator:
+  - text: "Please select the nearest store."
+    buttons:
+    - title: "Madhapur"
+      payload: "/sbCc4FE6_store_location"
+    - title: "Banjara Hills"
+      payload: "/sbCc4FE6_store_location"
+    - title: "Kukatpally"
+      payload: "/sbCc4FE6_store_location"
+
+  utter_sbCc4FE6_store_location:
+  - text: "🏠 Flat no.200, La Casa Bonita H.No 1-65/20/105, Kakatiya Hills \n \n 📱 +91-8886333327 \n \n ✉ marketing@mauvetix.com "
+
+  utter_sbCc4FE6_business_enquiries:
+  - text: "Thank you for showing interest in collaborating with us. You can write to us at marketing@mauvetix.com and our sales team will reach out to you."
+
+  utter_ask_booking_sbCc4FE6:
+  - text: "Please enter your booking number.(*Enter any 4 digit number*) "
+
+  utter_sbCc4FE6_doctor_book:
+  - text: "Please share the following information to confirm your appointment."
+
+  utter_sbCc4FE6_greet:
+  - text: "How can I help you?"
+    buttons:
+    - title: "Vehicle servicing"
+      payload: "/sbCc4FE6_vehicle_servicing"
+    - title: "Doctor appointment"
+      payload: "/sbCc4FE6_doctor_appointment"
+
+  utter_sbCc4FE6_anythingelse:
+  - text: "Is there anything else I can help you with?"
+    buttons:
+    - title: "Yes"
+      payload: "/sbCc4FE6_vehicle_options"
+    - title: "No"
+      payload: "/sbCc4FE6_close"
+
+  utter_sbCc4FE6_anythingelse_doctor:
+  - text: "Is there anything else I can help you with?"
+    buttons:
+    - title: "Yes"
+      payload: "/sbCc4FE6_doctor_options"
+    - title: "No"
+      payload: "/sbCc4FE6_close"
+
+  utter_sbCc4FE6_did_that_help:
+  - text: "Did that help you?"
+
+  utter_sbCc4FE6_close:
+  - text: "Thank you for contacting Mauvetix, have a great day."
+
+  utter_sbCc4FE6_goodbye:
+  - text: "Bye"
+
+  utter_sbCc4FE6_iamabot:
+  - text: "I am a bot, powered by Mauvetix."
+
+  utter_sbCc4FE6_doctor_appointment:
+  - text: "How can I help you?"
+    buttons:
+    - title: "Book an appointment"
+      payload: "/sbCc4FE6_doctor_book"
+    - title: "Our specialities"
+      payload: "/sbCc4FE6_doctor_specialities"
+    - title: "Find a doctor"
+      payload: "/sbCc4FE6_doctor_availability"
+    - title: "Business enquiries"
+      payload: "/sbCc4FE6_business_enquiries_doctor"
+
+  utter_sbCc4FE6_doctor_availability:
+  - text: "Please select the speciality"
+    buttons:
+    - title: "Cardiology"
+      payload: "sbCc4FE6_Cardiology"
+    - title: "Orthopedic"
+      payload: "sbCc4FE6_Orthopedic"
+    - title: "E&T"
+      payload: "sbCc4FE6_E&T"
+    - title: "Dermatology"
+      payload: "sbCc4FE6_Dermatology"
+
+# brundavan qFH0i9NeQv_
+  utter_qFH0i9NeQv_get_started:
+  - text: "How can we help you?"
+    buttons:
+    - title: "Book an appointment"
+      payload: "/qFH0i9NeQv_doctor_book"
+    - title: "Our specialities"
+      payload: "/qFH0i9NeQv_doctor_specialities"
+    - title: "Find a doctor"
+      payload: "/qFH0i9NeQv_doctor_availability"
+    - title: "Business enquiries"
+      payload: "/qFH0i9NeQv_business_enquiries_doctor"
+
+  utter_qFH0i9NeQv_doctor_book:
+  - text: "Please share the following information to confirm your appointment."
+
+  utter_qFH0i9NeQv_business_enquiries:
+  - text: "Thank you for showing interest in collaborating with us. You can write to us at brundavangyneccare@gmail.com and our sales team will reach out to you."
+
+  utter_ask_booking_qFH0i9NeQv:
+  - text: "Please enter your booking number.(*Enter any 4 digit number*) "
+
+  utter_doctor_book_qFH0i9NeQv:
+  - text: "Please share the following information to confirm your appointment."
+
+
+  utter_qFH0i9NeQv_anythingelse_doctor:
+  - text: "Is there anything else I can help you with?"
+    buttons:
+    - title: "Yes"
+      payload: "/qFH0i9NeQv_doctor_options"
+    - title: "No"
+      payload: "/qFH0i9NeQv_close"
+
+  utter_qFH0i9NeQv_did_that_help:
+  - text: "Did that help you?"
+
+  utter_qFH0i9NeQv_close:
+  - text: "Thank you for contacting Brundavan hospitals, have a great day."
+
+  utter_qFH0i9NeQv_goodbye:
+  - text: "Bye"
+
+  utter_qFH0i9NeQv_iamabot:
+  - text: "I am a bot, powered by Mauvetix."
+
+  utter_qFH0i9NeQv_doctor_availability:
+  - text: "Please select the speciality"
+    buttons:
+    - title: "Gynecology"
+      payload: "qFH0i9NeQv_Gynecology"
+    - title: "Pediatric"
+      payload: "qFH0i9NeQv_Pediatric"
+
+# skipprz JnLRTjwfPT
+  utter_JnLRTjwfPT_get_started:
+  - text: "Need help finding anything here?"
+    buttons:
+    - title: "Yes"
+      payload: "/JnLRTjwfPT_services"
+    - title: "Nah, Just browsing."
+      payload: "/JnLRTjwfPT_close"
+
+  utter_JnLRTjwfPT_services:
+  - text: "Great, we offer vendor management services, help with commodities, funding and more to businesses of all sizes. What are you looking for?"
+    buttons:
+    - title: "Vendor management"
+      payload: "/JnLRTjwfPT_vendor_management"
+    - title: "Commodities"
+      payload: "/JnLRTjwfPT_commodities"
+    - title: "Funding"
+      payload: "/JnLRTjwfPT_funding"
+    - title: "Co founder search"
+      payload: "/JnLRTjwfPT_co_founder_search"
+    - title: "Mentorship"
+      payload: "/JnLRTjwfPT_mentorship"
+    - title: "Partnership"
+      payload: "/JnLRTjwfPT_partnership"
+    - title: "Careers"
+      payload: "/JnLRTjwfPT_careers"
+
+  utter_JnLRTjwfPT_greet:
+  - text: "How can I help you?"
+    buttons:
+    - title: "Vendor management"
+      payload: "/JnLRTjwfPT_vendor_management"
+    - title: "Commodities"
+      payload: "/JnLRTjwfPT_commodities"
+    - title: "Funding"
+      payload: "/JnLRTjwfPT_funding"
+    - title: "Co founder search"
+      payload: "/JnLRTjwfPT_co_founder_search"
+    - title: "Mentorship"
+      payload: "/JnLRTjwfPT_mentorship"
+    - title: "Partnership"
+      payload: "/JnLRTjwfPT_partnership"
+    - title: "Careers"
+      payload: "/JnLRTjwfPT_careers"
+
+  utter_JnLRTjwfPT_vendor_management:
+  - text: "Ok {name_JnLRTjwfPT}, Choose the option which best describes you!"
+    buttons:
+    - title: "I am a vendor"
+      payload: "/JnLRTjwfPT_vendor"
+    - title: "I want a vendor "
+      payload: "/JnLRTjwfPT_need_vendor"
+
+  utter_JnLRTjwfPT_vendor:
+  - text: "Great! It will be wonderful to have you on board. Here is the link to our [registration form](https://www.skipprz.com/vendor-form), fill it and submit. Our team will contact you soon!"
+
+
+  utter_JnLRTjwfPT_need_vendor:
+  - text: "Well, you are in the right place! We have 30+ categories to serve you. A quick call will help us get your requirements and start our partnership 🤝🤝."
+
+  utter_JnLRTjwfPT_commodities:
+  - text: "Choose the option that best fits your requirements."
+    buttons:
+    - title: "Buyer"
+      payload: "/JnLRTjwfPT_buyer"
+    - title: "Seller"
+      payload: "/JnLRTjwfPT_seller"
+
+  utter_JnLRTjwfPT_founder:
+  - text: "Please select the option which best describes you."
+    buttons:
+    - title: "Want to be Co - Founder"
+      payload: "/JnLRTjwfPT_become_co_founder"
+    - title: "Looking for a Co - Founder"
+      payload: "/JnLRTjwfPT_need_founder"
+
+  utter_JnLRTjwfPT_become_co_founder_register:
+  - text: "Your search ends here. [Register now](https://www.skipprz.com/become-a-cofounder) and let us do the job for you 🤟🤟."
+
+  utter_JnLRTjwfPT_need_founder_register:
+  - text: "Your search ends here. [Register now](https://www.skipprz.com/looking-for-cofounder) and let us do the job for you 🤟🤟."
+
+  utter_JnLRTjwfPT_mentorship:
+  - text: "Please select the option which best describes you."
+    buttons:
+    - title: "Searching for a mentor "
+      payload: "/JnLRTjwfPT_mentorship"
+    - title: "Want to be a mentor"
+      payload: "/JnLRTjwfPT_mentorship"
+
+
+  utter_JnLRTjwfPT_no:
+  - text: "Understood you do not want to share with us, we need your details to proceed further."
+
+  utter_JnLRTjwfPT_form_close:
+  - text: "Without your details, we can not proceed further. Thank you for contacting us, have a good day."
+    image: https://i.giphy.com/media/cIh6lhWd1kJEvgISv9/200.webp
+
+  utter_JnLRTjwfPT_anythingelse:
+  - text: "Is there anything else I can help you with?"
+    buttons:
+    - title: "Yes"
+      payload: "/JnLRTjwfPT_options"
+    - title: "No"
+      payload: "/JnLRTjwfPT_goodbye"
+
+  utter_JnLRTjwfPT_goodbye:
+  - text: "Thank you for contacting Skipprz! Have a good day."
+
+  utter_JnLRTjwfPT_iamabot:
+  - text: "I am a bot, powered by Mauvetix Solutions."
+
+# Mauvetix Solutions oOwiLmXXsD
+  utter_oOwiLmXXsD_anythingelse:
+  - text: "Is there anything else we can help you with?"
+    buttons:
+    - title: "YES"
+      payload: "/oOwiLmXXsD_options"
+    - title: "NO"
+      payload: "/oOwiLmXXsD_close"
+      
+  utter_oOwiLmXXsD_services:
+  - text: "How can I help you?"
+    buttons:
+    - title: "Chatbots"
+      payload: "/oOwiLmXXsD_chatbots"
+    - title: "Website Development"
+      payload: "/oOwiLmXXsD_website_development"
+    - title: "Digital Marketing"
+      payload: "/oOwiLmXXsD_digital_marketing"
+    - title: "Recruitments"
+      payload: "/oOwiLmXXsD_recruitments"
+
+  utter_oOwiLmXXsD_close:
+  - text: "Thank you for contacting Mauvetix Solutions. We look forward to working with you. Have a good day!"
+
+  utter_oOwiLmXXsD_no:
+  - text: "Understood you do not want to share with us, without the details we can not move forward."
+
+  utter_oOwiLmXXsD_chatbots:
+  - text: "To read more visit 👉 [here](https://mauvetix.com/omnichannel-chatbots)"
+    buttons:
+    - title: "Schedule a Demo"
+      payload: "/oOwiLmXXsD_demo"
+
+  utter_oOwiLmXXsD_digital:
+  - text: "To read more visit 👉 [here](https://mauvetix.com/omnichannel-chatbots)"
+    buttons:
+    - title: "Schedule a Demo"
+      payload: "/oOwiLmXXsD_demo"
+
+  utter_oOwiLmXXsD_website:
+  - text: "To read more visit 👉 [here](https://mauvetix.com/omnichannel-chatbots)"
+    buttons:
+    - title: "Schedule a Demo"
+      payload: "/oOwiLmXXsD_demo"
+
+  utter_oOwiLmXXsD_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_oOwiLmXXsD_did_that_help:
+  - text: "Did that help you?"
+
+  utter_oOwiLmXXsD_happy:
+  - text: "Great, carry on!"
+
+  utter_oOwiLmXXsD_goodbye:
+  - text: "Bye"
+
+  utter_oOwiLmXXsD_iamabot:
+  - text: "I am a bot, powered by Mauvechat."
+
+
+forms:
+  name_form_35cCbsE6EF4dxgVQnh:
+    required_slots:
+        name_35cCbsE6EF4dxgVQnh:
+        - type: from_text
+          not_intent: 35cCbsE6EF4dxgVQnh_deny
+  email_form_35cCbsE6EF4dxgVQnh:
+    required_slots:
+        email_35cCbsE6EF4dxgVQnh:
+        - type: from_text
+          not_intent: 35cCbsE6EF4dxgVQnh_deny  
+  number_form_35cCbsE6EF4dxgVQnh:
+    required_slots:
+        number_35cCbsE6EF4dxgVQnh:
+        - type: from_text
+          not_intent: 35cCbsE6EF4dxgVQnh_deny
+# appointment booking sbCc4FE6
+  contact_form_sbCc4FE6:
+    name_sbCc4FE6:
+      - type: from_text
+    number_sbCc4FE6:
+      - type: from_text
+    email_sbCc4FE6:
+      - type: from_text
+  booking_form_sbCc4FE6:
+    name_sbCc4FE6:
+      - type: from_text
+    number_sbCc4FE6:
+      - type: from_text
+    booking_sbCc4FE6:
+      - type: from_text
+# brundavan qFH0i9NeQv_
+  contact_form_qFH0i9NeQv:
+    name_qFH0i9NeQv:
+      - type: from_text
+    number_qFH0i9NeQv:
+      - type: from_text
+    email_qFH0i9NeQv:
+      - type: from_text
+# skipprz JnLRTjwfPT
+  name_form_JnLRTjwfPT:
+    required_slots:
+        name_JnLRTjwfPT:
+        - type: from_text
+          not_intent: JnLRTjwfPT_deny
+  number_form_JnLRTjwfPT:
+    required_slots:
+        number_JnLRTjwfPT:
+        - type: from_text
+          not_intent: JnLRTjwfPT_deny
+# Mauvetix Solutions oOwiLmXXsD
+  name_form_oOwiLmXXsD:
+    name_oOwiLmXXsD:
+      - type: from_text
+        not_intent: oOwiLmXXsD_deny      
+  number_form_oOwiLmXXsD:
+    number_oOwiLmXXsD:
+      - type: from_text
+        not_intent: oOwiLmXXsD_deny
+  email_form_oOwiLmXXsD:
+    email_oOwiLmXXsD:
+      - type: from_text
+        not_intent: oOwiLmXXsD_deny
+
+
+actions:
+- action_get_started_35cCbsE6EF4dxgVQnh
+- action_close_35cCbsE6EF4dxgVQnh
+- action_ott_solutions_35cCbsE6EF4dxgVQnh
+- action_iptv_35cCbsE6EF4dxgVQnh
+- action_subscription_35cCbsE6EF4dxgVQnh
+- action_content_35cCbsE6EF4dxgVQnh
+- action_monetization_35cCbsE6EF4dxgVQnh
+- validate_name_form_35cCbsE6EF4dxgVQnh
+- validate_email_form_35cCbsE6EF4dxgVQnh
+- validate_number_form_35cCbsE6EF4dxgVQnh
+- action_ask_name_35cCbsE6EF4dxgVQnh
+- action_ask_email_35cCbsE6EF4dxgVQnh
+- action_ask_number_35cCbsE6EF4dxgVQnh
+- action_submit_35cCbsE6EF4dxgVQnh
+# appointment booking
+- action_welcome_sbCc4FE6
+- validate_contact_form_sbCc4FE6
+- action_ask_name_sbCc4FE6
+- action_ask_number_sbCc4FE6
+- action_ask_email_sbCc4FE6
+- action_bikes_carousel_sbCc4FE6
+- action_time_sbCc4FE6
+- action_inform_sbCc4FE6
+- action_submit_sbCc4FE6
+- action_form_35cCbsE6EF4dxgVQnh
+- action_service_options_sbCc4FE6
+- validate_booking_form_sbCc4FE6
+- action_booking_status_sbCc4FE6
+- action_speciality_carousel_sbCc4FE6
+- action_doctor_speciality_carousel_sbCc4FE6
+- action_appointment_time_sbCc4FE6
+- action_select_carousel_sbCc4FE6
+- action_slots_sbCc4FE6
+- action_appointment_submit_sbCc4FE6
+# brundavan qFH0i9NeQv_
+- action_welcome_qFH0i9NeQv
+- validate_contact_form_qFH0i9NeQv
+- action_ask_name_qFH0i9NeQv
+- action_ask_number_qFH0i9NeQv
+- action_ask_email_qFH0i9NeQv
+- action_speciality_carousel_qFH0i9NeQv
+- action_doctor_speciality_carousel_qFH0i9NeQv
+- action_appointment_time_qFH0i9NeQv
+- action_select_carousel_qFH0i9NeQv
+- action_appointment_submit_qFH0i9NeQv
+# skipprz JnLRTjwfPT
+- action_get_started_JnLRTjwfPT
+- action_close_JnLRTjwfPT
+- action_vendor_management_JnLRTjwfPT
+- action_buyer_commodity_JnLRTjwfPT
+- action_seller_commodity_JnLRTjwfPT
+- action_funding_JnLRTjwfPT
+- action_co_founder_search_JnLRTjwfPT
+- action_mentorship_JnLRTjwfPT
+- action_careers_JnLRTjwfPT
+- validate_name_form_JnLRTjwfPT
+- validate_number_form_JnLRTjwfPT
+- action_ask_name_JnLRTjwfPT
+- action_ask_number_JnLRTjwfPT
+- action_submit_JnLRTjwfPT
+- action_partnership_JnLRTjwfPT
+- action_mentor_submit_JnLRTjwfPT
+# Mauvetix Solutions
+- action_greet_oOwiLmXXsD
+- action_chatbot_oOwiLmXXsD
+- action_digital_marketing_oOwiLmXXsD
+- action_website_development_oOwiLmXXsD
+- action_recruitment_oOwiLmXXsD
+- validate_email_form_oOwiLmXXsD
+- validate_number_form_oOwiLmXXsD
+- validate_name_form_oOwiLmXXsD 
+- action_ask_name_oOwiLmXXsD
+- action_ask_email_oOwiLmXXsD
+- action_ask_number_oOwiLmXXsD
+- action_submit_oOwiLmXXsD
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

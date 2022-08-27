@@ -1,0 +1,35 @@
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "http://3.110.37.11/static/v1.0/basic/index.js"),
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          initPayload: '/sbCc4FE6_get_started',
+          protocol: 'socketio',
+          socketUrl: "http://3.110.37.11:8081",
+          userBackgroundColor: "#FA2B2B",
+          userTextColor: "#fff",
+          btnTextColor:"#FA2B2B",
+          showFullScreenButton: false,
+          showRefreshButton: false,
+          showDropDown: false,
+          mainColor: "#FA2B2B",
+          customMessageDelay: (message) => {
+            let delay = message.length * 30;
+            if (delay > 2 * 1000) delay = 3 * 1000;
+            if (delay < 400) delay = 1000;
+            return delay;
+          },
+          clientAvatar: "https://api.mauvechat.io/static/user.jpg",
+          profileAvatar: "https://api.mauvechat.io/static/robot.png",
+          logoAvatar: "https://api.mauvechat.io/static/CPC.png",
+          customData: { language: "en", bot_id: 'sbCc4FE6_' },
+          params: { storage: "session" },
+        },
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();</script>
